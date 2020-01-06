@@ -6,8 +6,12 @@
 </head>
 <header>
     <figure>
-        <img src="assets/image/itescia.png" alt="Logo itescia" height="100px">
-        <img src="assets/image/itescia_bandeau.png" alt="bandeau itescia" height="100px">
+        <img src="assets/image/itescia.png"
+             alt="Logo itescia"
+             height="100px">
+        <img src="assets/image/itescia_bandeau.png"
+             alt="bandeau itescia"
+             height="100px">
     </figure>
     <nav>
         <ul>
@@ -23,28 +27,272 @@
             <h2>Votre 1er choix de formation à Itescia</h2>
 
             <aside>
-                <img src="">
+                <img src="assets/image/gestion.png"
+                     alt="logo gestion">
             </aside>
             <article>
                 <legend>BAC +2</legend>
                 <div>
-                    <input type="checkbox" id="bts_cg" name="bts2" value="bts_cg">
+                    <input type="radio"
+                           id="bts_cg"
+                           name="select_formation"
+                           value="bts_cg">
                     <label for="bts_cg">BTS CG</label>
+                </div>
+                <legend>BAC +3</legend>
+                <span>DCG</span>
+                <div>
+                    <input type="radio"
+                           id="dcg_l1"
+                           name="select_formation"
+                           value="entree_l1">
+                    <label for="dcg_l1">Entree L1</label>
+                    <input type="radio"
+                           id="dcg_l2"
+                           name="select_formation"
+                           value="entree_l2">
+                    <label for="dcg_l2">Entree L2</label>
+                </div>
+                <legend>BAC +4</legend>
+                <span>Contrôleur de gestion</span>
+                <div>
+                    <input type="radio"
+                           id="bac4_l3"
+                           name="select_formation"
+                           value="entree_l3">
+                    <label for="bac4_l3">Entree L3</label>
+                    <input type="radio"
+                           id="bac_m1"
+                           name="select_formation"
+                           value="entree_m1">
+                    <label for="bac_m1">Entree M1</label>
+                </div>
+                <legend>BAC +5</legend>
+                <div>
+                    <input type="radio"
+                           id="bac5"
+                           name="select_formation"
+                           value="entree_m1">
+                    <label for="bac5">DSCG (Entree M1)</label>
+                </div>
+            </article>
+            <aside> 
+                <img src="assets/image/management.png">
+            </aside>
+            <article>
+                <legend>BAC +4</legend>
+                <span>Responsable de systeme de management QHSE</span>
+                <div>
+                    <input type="radio"
+                           id="rsmqhse_l3"
+                           name="select_formation"
+                           value="entree_l3">
+                    <label for="rsmqhse_l3">Entree en L3</label>
+                    <input type="radio"
+                           id="rsmqhse_m1"
+                           name="select_formation"
+                           value="entree_m1">
+                    <label for="rsmqhse_m1">Entree en M1</label>
+                </div>
+                <span>Responsable Ressources Humaines</span>
+                <div>
+                <input type="radio"
+                       id="rrh_l3"
+                       name="select_formation"
+                       value="entree_l3">
+                    <label for="rrh_l3">Entree en L3</label>
+                    <input type="radio"
+                           id="rrh_m1"
+                           name="select_formation"
+                           value="entree_m1">
+                    <label for="rrh_m1">Entree en M1</label>
+                </div>
+                <legend>BAC +5</legend>
+                <div>
+                    <input type="radio"
+                           id="mqpi"
+                           name="select_formation"
+                           value="entree_m2">
+                    <label for="mqpi">Manager Qualité et Processus Intelligents (entrée en M2)</label>
+                </div>
+            </article>
+            <aside>
+                <img src="assets/image/informatique.png">
+            </aside>
+            <article>
+                <legend>BAC +2</legend>
+                <input type="radio"
+                       id="bts_sio"
+                       name="select_formation"
+                       value="entree_bts_sio">
+                <label for="bts_sio">BTS SIO, option SISR ou SLAM</label>
+                <div>
+                    <input type="radio"
+                           id="codeur_informatique"
+                           name="select_formation"
+                           value="entree_codeur">
+                    <label for="codeur_informatique">Codeur informatique</label>
+                </div>
+                    <span>En 2 ans en alternance</span>
+                    <div>
+                    <input type="radio"
+                           id="codeur_cergy_alt"
+                           name="select_place"
+                           value="entree_codeur">
+                    <label for="codeur_cergy_alt">à Cergy</label>
+                    <input type="radio"
+                           id="codeur_paris_alt"
+                           name="select_place"
+                           value="entree_codeur">
+                    <label for="codeur_paris_alt">à Paris</label>
+                    </div>
+                    <span>En 1 an en temps plein (payant)</span>
+                    <div>
+                        <input type="radio"
+                               id="codeur_cergy"
+                               name="select_place"
+                               value="entree_codeur">
+                        <label for="codeur_cergy">à Cergy</label>
+                        <input type="radio"
+                               id="codeur_paris"
+                               name="select_place"
+                               value="entree_codeur">
+                        <label for="codeur_paris">à Paris</label>
+                    </div>
+                <legend>BAC +3 (en 1 an)</legend>
+                <div>
+                    <input type="radio"
+                           id="lig"
+                           name="select_formation"
+                           value="entree_lig">
+                    <label for="lig">Licence d'Informatique générale</label>
                 </div>
                 <div>
-                    <input type="checkbox" id="bts_cg" name="bts2" value="bts_cg">
-                    <label for="bts_cg">BTS CG</label>
+                    <input type="radio"
+                           id="cdsmc"
+                           name="select_formation"
+                           value="entree_cdsmc">
+                    <label for="cdsmc">Concepteur développeur de solution mobiles et connectées</label>
+                </div>
+                <span>En alternance</span>
+                <div>
+                    <input type="radio"
+                           id="cdsmc_cergy"
+                           name="select_place"
+                           value="entree_cdsmc">
+                    <label for="cdsmc_cergy">à Cergy</label>
+                </div>
+                <span>En temps plein (payant)</span>
+                <div>
+                    <input type="radio"
+                           id="cdsmc_paris"
+                           name="select_place"
+                           value="entree_cdsmc">
+                    <label for="cdsmc_paris">à Paris</label>
+                </div>
+                <legend>BAC +5</legend>
+                <span>Manager en Ingénierie Informatique</span>
+                <div>
+                    <input type="radio"
+                           id="mii_l3"
+                           name="select_formation"
+                           value="entree_mii">
+                    <label for="mii_l3">Entrée en L3</label>
+                </div>
+                <div>
+                    <input type="radio"
+                           id="mii_m1"
+                           name="select_formation"
+                           value="entree_mii">
+                    <label for="mii_m1">Entrée en M1, spécialisation</label>
+                </div>
+                    <input type="radio"
+                           id="msc_cyb"
+                           name="select_option"
+                           value="entree_mii">
+                    <label for="msc_cyb">MSC Cybersécurité</label>
+                </div>
+                <div>
+                    <input type="radio"
+                           id="msc_rs"
+                           name="select_option"
+                           value="entree_mii">
+                    <label for="msc_rs">MSC Réseaux & Systèmes</label>
+                </div>
+                <div>
+                    <input type="radio"
+                           id="msc_bigdata"
+                           name="select_option"
+                           value="entree_mii">
+                    <label for="msc_bigdata">MSC Big data & Cloud</label>
+                </div>
+                <div>
+                    <input type="radio"
+                           id="msc_gaming"
+                           name="select_option"
+                           value="entree_mii">
+                    <label for="msc_gaming">MSC Gaming & Smart Tech</label>
+                </div>
+                <div>
+                    <input type="radio"
+                           id="msc_mana_si"
+                           name="select_option"
+                           value="entree_mii">
+                    <label for="msc_mana_si">MSC Management des SI & Digitalisation</label>
+                </div>
+                <div>
+                    <input type="radio"
+                           id="ing_log_sys"
+                           name="select_option"
+                           value="entree_mii">
+                    <label for="ing_log_sys">Ingénierie Logiciels et Systèmes</label>
+                </div>
+                <div>
+                    <input type="radio"
+                           id="ing_ia"
+                           name="select_option"
+                           value="entree_mii">
+                    <label for="ing_ia">Ingénierie Artificielle et Applications</label>
+                </div>
+                <div>
+                    <input type="radio"
+                           id="mii_m2"
+                           name="select_formation"
+                           value="entree_mii">
+                    <label for="mii_m2">Entrée en M2, spécialisation</label>
+                </div>
+                <div>
+                    <input type="radio"
+                           id="msc_ent_it"
+                           name="select_option"
+                           value="entree_mii">
+                    <label for="msc_ent_it">MSC Entrepreneuriat & IT</label>
+                </div>
+                <div>
+
+                    <input type="radio" id="msc_int_it" name="select_option" value="entree_mii">
+                    <label for="msc_int_it">MSC International Business for IT</label>
+
+                </div>
+                <legend>Business Analyste (M1+M2)</legend>
+                <div>
+                <input type="radio"
+                       id="perfo_sys_info"
+                       name="select_option"
+                       value="entree_business_analyste">
+                <label for="perfo_sys_info">Performance et systèmes d'information</label>
+                </div>
+                <div>
+                <input type="radio"
+                       id="digi_rh"
+                       name="select_option"
+                       value="entree_business_analyste">
+                <label for="digi_rh">Digitalisation RH</label>
                 </div>
 
-                    <input type="checkbox" id="bac_2" name="bts_cg">
-                    <label for="bac_3">Bac +3</label>
-                    <input type="checkbox" id="bac_3" name="L1_gestion">
-                    <input type="checkbox" id="bac_3" name="L2_gestion">
-                    <label for="bac_4">Bac +4</label>
-                    <input type="checkbox" id="bac_4" name="L3_gestion">
-                    <input type="checkbox" id="bac_4" name="M1_gestion">
-                    <label for="bac_5">Bac +5</label>
-
+                <div>
+                    <p>ITESCIA,  établissement de la CCI Paris-Ile-de-France collecte ces  données afin de répondre à  votre demande et au-delà vous tenir informé des activités de nos services. Vos données sont conservées tant que vous ne vous désinscrivez pas. Vos données ne sont pas communiquées à des tiers, hormis au parrain que vous avez mentionné ci-dessus (point 3). Conformément à la loi du 6 janvier 1978, vous disposez d'un droit d'accès aux données qui vous concernent auprès du Correspondant à la protection de données cpdp@cci-paris-idf.fr. Vous disposez également d'un droit de modification ou de suppression des mêmes données auprès de clil@itescia.fr et en cas de problème auprès de cpdp@cci-paris-idf.fr </p>
+                </div>
             </article>
         </section>
     </form>
