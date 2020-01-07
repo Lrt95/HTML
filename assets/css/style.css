@@ -1,0 +1,65 @@
+body section {
+    width: 48%;
+}
+body form {
+    display: flex;
+    flex: 1 ;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+body legend {
+    color: darkred;
+    margin-bottom: 10px;
+}
+
+body label {
+    font-size: 13px;
+}
+
+body span {
+    font-size: 15px;
+}
+
+.btn-send {
+    width: 10%;
+}
+.title {
+    color: darkred;
+    text-align: center;
+}
+
+.subtitle {
+    color: darkred;
+    text-align: center;
+}
+
+.gestion {
+    margin: 20px;
+}
+
+.management {
+    margin: 20px;
+}
+
+.informatique {
+    margin: 20px;
+}
+
+.information {
+    margin: 20px;
+}
+
+.list {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.sub-list {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.scolarity-text {
+    resize: none;
+}
