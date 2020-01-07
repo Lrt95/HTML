@@ -10,17 +10,17 @@
 
 <header>
     <figure>
-        <img src="assets/image/itescia.png"
+        <img class="displayed1" id= "conteneur" src="assets/image/itescia.png"
              alt="Logo itescia"
              height="100px">
-        <img src="assets/image/itescia_bandeau.png"
+        <img class="displayed" id= "itesciaB" src="assets/image/itescia_bandeau.png"
              alt="bandeau itescia"
              height="100px">
     </figure>
     <nav>
         <ul>
-            <li><a href="#">Accueil</a></li>
-            <li><a href="#">Itescia</a></li>
+            <li><a id="acceuil" href="#">Accueil</a></li>
+            <li><a id="itescia" href="#">Itescia</a></li>
         </ul>
     </nav>
 </header>
@@ -377,7 +377,7 @@
                             <td>
                                 <input type="tel"
                                        maxlength="10"
-                                       pattern="[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}"
+                                       pattern="[0-9]{10}"
                                        name="phone" id="phone"
                                        required>
                             </td>
@@ -389,7 +389,7 @@
                             <td>
                                 <input type="tel"
                                        maxlength="10"
-                                       pattern="[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}"
+                                       pattern="[0-9]{10}"
                                        name="gsm"
                                        id="gsm"
                                        required>
@@ -467,7 +467,7 @@
                               rows="5"
                               name="school"
                               id="school"
-                              required>
+                              >
                     </textarea>
                 </div>
                 <div class="list">
@@ -478,7 +478,7 @@
                               rows="5"
                               name="degree"
                               id="degree"
-                              required>
+                              >
                     </textarea>
                 </div>
             </article>
@@ -491,7 +491,7 @@
                     <input type="text"
                            name="choice_2"
                            id="choice_2"
-                           required>
+                           >
                     <label for="level_2">Niveau d'entrée</label>
                     <select name="level" id="level_2">
                         <option value="bac1">L1</option>
@@ -506,7 +506,7 @@
                     <input type="text"
                            name="choice_3"
                            id="choice_3"
-                           required>
+                           >
                     <label for="level_3">Niveau d'entrée</label>
                     <select name="level" id="level_3">
                         <option value="bac1">L1</option>
@@ -526,12 +526,12 @@
                     <input type="text"
                            name="last_name"
                            id="last_name_1"
-                           required>
+                           >
                     <label for="first_name_1">Prenom:</label>
                     <input type="text"
                            name="first_name"
                            id="first_name_1"
-                           required>
+                           >
                 </div>
                 <div class="list">
                     <label for="formation_in_progress">Formation suivie:</label>
@@ -541,7 +541,7 @@
                             rows="5"
                             name="formation_in_progress"
                             id="formation_in_progress"
-                            required>
+                            >
                     </textarea>
                 </div>
                 <h3>FORMATION CONTINUE:</h3>
@@ -554,7 +554,7 @@
                           <input type="radio"
                                  name="radio"
                                  id="vae"
-                                 required>
+                                 >
                       </td>
                       <td>
                           <label for="vae">VAE</label>
@@ -563,7 +563,7 @@
                           <input type="radio"
                                  name="radio"
                                  id="part_time"
-                                 required>
+                                 >
                       </td>
                       <td>
                           <label for="part_time">Part-time</label>
@@ -577,7 +577,7 @@
                             <input type="radio"
                                    name="radio"
                                    id="vae_1"
-                                   required>
+                                   >
                         </td>
                         <td>
                             <label for="vae_1">VAE</label>
@@ -586,7 +586,7 @@
                             <input type="radio"
                                    name="radio"
                                    id="part_time_1"
-                                   required>
+                                   >
                         </td>
                         <td>
                             <label for="part_time_1">Part-time</label>
@@ -600,7 +600,7 @@
                             <input type="radio"
                                    name="radio"
                                    id="vae_2"
-                                   required>
+                                   >
                         </td>
                         <td>
                             <label for="vae_2">VAE</label>
@@ -609,7 +609,7 @@
                             <input type="radio"
                                    name="radio"
                                    id="part_time_2"
-                                   required>
+                                   >
                         </td>
                         <td>
                             <label for="part_time_2">Part-time</label>
@@ -623,7 +623,7 @@
                             <input type="radio"
                                    name="radio"
                                    id="part_time_3"
-                                   required>
+                                   >
                         </td>
                         <td>
                             <label for="part_time_3">Part-time</label>
@@ -637,7 +637,7 @@
                             <input type="radio"
                                    name="radio"
                                    id="part_time_4"
-                                   required>
+                                   >
                         </td>
                         <td>
                             <label for="part_time_4">Part-time</label>
@@ -646,43 +646,42 @@
               </table>
                 <h4>Votre situation:</h4>
                 <div class="list">
-                    <input type="radio"
-                           name="radio_1"
-                           id="radio_employe"
-                           required>
-                    <label for="radio_employe">Salarié(e),de l'entreprise</label>
-                    <textarea class="scolarity-text"
-                              cols="100"
-                              rows="3"
-                              name="radio_1"
-                              id="text_employe_1"
-                              required>
-                    </textarea>
-                    </br>
-                    <input type="radio"
-                           name="radio_1"
-                           id="radio_jobseeker"
-                           required>
-                    <label for="radio_jobseeker">Demandeur d'emploi</label>
-                    </br>
-                    <input type="radio"
-                           name="radio_1"
-                           id="radio_individual"
-                           required>
-                    <label for="radio_individual">Particulier</label>
-                    </br>
-                    <input type="radio"
-                           name="radio_1"
-                           id="radio_other"
-                           required>
-                    <label for="radio_other">Autre:</label>
-                    <textarea class="scolarity-text"
-                              cols="100"
-                              rows="3"
-                              name="radio_1"
-                              id="text_other"
-                              required>
-                    </textarea>
+                    <div>
+                        <input type="radio"
+                               name="radio_1"
+                               id="radio_employe"
+                               >
+                        <label for="radio_employe">Salarié(e),de l'entreprise</label>
+                        <input type="text"
+                                  name="radio_1"
+                                  id="text_employe_1"
+                                  >
+                    </div>
+                    <div>
+                        <input type="radio"
+                               name="radio_1"
+                               id="radio_jobseeker"
+                               >
+                        <label for="radio_jobseeker">Demandeur d'emploi</label>
+                    </div>
+                    <div>
+                        <input type="radio"
+                               name="radio_1"
+                               id="radio_individual"
+                               >
+                        <label for="radio_individual">Particulier</label>
+                    </div>
+                    <div>
+                        <input type="radio"
+                               name="radio_1"
+                               id="radio_other"
+                               >
+                        <label for="radio_other">Autre:</label>
+                        <input type="text"
+                               name="radio_1"
+                               id="text_other"
+                               >
+                    </div>
                 </div>
             </article>
         </section>
@@ -690,8 +689,26 @@
     </form>
 </body>
 <footer>
+    <div class="footersocial">
+        <a href="" class="footersocial">Mentions légales</a> - <a href="" class="footersocial">Contact</a> </br>
+Copyright 2019 ITESCIA  </div>
+
+<div class="footersocial">
+    <a href="https://www.facebook.com/itescia/" class="icon"> <img src="assets/image/facebook-logo.png"  />
+        </a>
+    <a href="https://twitter.com/itescia" class="icon"> <img src="assets/image/twitter.png" />
+        </a>
+    <a href="https://fr.linkedin.com/company/itescia" class="icon"> <img src="assets/image/linkedin.png" />
+        </a>
+    <a href="https://www.instagram.com/itescia_officiel/" class="icon"> <img src="assets/image/instagram.png" />
+        </a>
+    <a href="https://www.youtube.com/channel/UCAhB6gZz4lFwtbXqhzkyVDg" class="icon"> <img src="assets/image/youtube.png" />
+        </a>
+
+
+</div>
     <div>
-        <p>ITESCIA,  établissement de la CCI Paris-Ile-de-France collecte ces  données afin de répondre à
+        <p class="footertext">ITESCIA,  établissement de la CCI Paris-Ile-de-France collecte ces  données afin de répondre à
             votre demande et au-delà vous tenir informé des activités de nos services. Vos données sont
             conservées tant que vous ne vous désinscrivez pas. Vos données ne sont pas communiquées à des
             tiers, hormis au parrain que vous avez mentionné ci-dessus (point 3). Conformément à la loi du
