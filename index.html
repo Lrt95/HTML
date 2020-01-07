@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Formulaire informations Itescia</title>
     <link rel="icon" type="image/png" href="assets/image/itescia.png" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
 
@@ -27,20 +27,18 @@
 
 
 <body>
-    <h1>Demande d'information Itescia</h1>
+    <h1 class="title">Demande d'information Itescia</h1>
     <form>
         <section>
-            <h2>Votre 1er choix de formation à Itescia</h2>
-
-
+            <h2 class="subtitle">Votre 1er choix de formation à Itescia</h2>
             <aside>
                 <img src="assets/image/banniere_gestion.png"
                      alt="logo gestion"
                      height="65px">
             </aside>
-            <article>
+            <article class="gestion">
                 <legend>BAC +2</legend>
-                <div>
+                <div class="list">
                     <input type="radio"
                            id="bts_cg"
                            name="select_formation"
@@ -48,8 +46,8 @@
                     <label for="bts_cg">BTS CG</label>
                 </div>
                 <legend>BAC +3</legend>
-                <span>DCG</span>
-                <div>
+                <span>DCG :</span>
+                <div class="list">
                     <input type="radio"
                            id="dcg_l1"
                            name="select_formation"
@@ -62,8 +60,8 @@
                     <label for="dcg_l2">Entree L2</label>
                 </div>
                 <legend>BAC +4</legend>
-                <span>Contrôleur de gestion</span>
-                <div>
+                <span>Contrôleur de gestion :</span>
+                <div class="list">
                     <input type="radio"
                            id="bac4_l3"
                            name="select_formation"
@@ -76,7 +74,7 @@
                     <label for="bac_m1">Entree M1</label>
                 </div>
                 <legend>BAC +5</legend>
-                <div>
+                <div class="list">
                     <input type="radio"
                            id="bac5"
                            name="select_formation"
@@ -87,13 +85,13 @@
 
 
             <aside> 
-                <img src="assets/image/banniere_anagement.png"
+                <img src="assets/image/banniere_management.png"
                 height="65px">
             </aside>
-            <article>
+            <article class="management">
                 <legend>BAC +4</legend>
                 <span>Responsable de systeme de management QHSE</span>
-                <div>
+                <div class="list">
                     <input type="radio"
                            id="rsmqhse_l3"
                            name="select_formation"
@@ -106,7 +104,7 @@
                     <label for="rsmqhse_m1">Entree en M1</label>
                 </div>
                 <span>Responsable Ressources Humaines</span>
-                <div>
+                <div class="list">
                 <input type="radio"
                        id="rrh_l3"
                        name="select_formation"
@@ -119,7 +117,7 @@
                     <label for="rrh_m1">Entree en M1</label>
                 </div>
                 <legend>BAC +5</legend>
-                <div>
+                <div class="list">
                     <input type="radio"
                            id="mqpi"
                            name="select_formation"
@@ -133,14 +131,16 @@
                 <img src="assets/image/banniere_informatique.png"
                 height="65px">
             </aside>
-            <article>
+            <article class="informatique">
                 <legend>BAC +2</legend>
-                <input type="radio"
-                       id="bts_sio"
-                       name="select_formation"
-                       value="entree_bts_sio">
-                <label for="bts_sio">BTS SIO, option SISR ou SLAM</label>
-                <div>
+                <div class="list">
+                    <input type="radio"
+                           id="bts_sio"
+                           name="select_formation"
+                           value="entree_bts_sio">
+                    <label for="bts_sio">BTS SIO, option SISR ou SLAM</label>
+                </div>
+                <div class="list">
                     <input type="radio"
                            id="codeur_informatique"
                            name="select_formation"
@@ -148,20 +148,20 @@
                     <label for="codeur_informatique">Codeur informatique</label>
                 </div>
                     <span>En 2 ans en alternance</span>
-                    <div>
-                    <input type="radio"
-                           id="codeur_cergy_alt"
-                           name="select_place"
-                           value="entree_codeur">
-                    <label for="codeur_cergy_alt">à Cergy</label>
-                    <input type="radio"
-                           id="codeur_paris_alt"
-                           name="select_place"
-                           value="entree_codeur">
-                    <label for="codeur_paris_alt">à Paris</label>
+                    <div class="list">
+                        <input type="radio"
+                               id="codeur_cergy_alt"
+                               name="select_place"
+                               value="entree_codeur">
+                        <label for="codeur_cergy_alt">à Cergy</label>
+                        <input type="radio"
+                               id="codeur_paris_alt"
+                               name="select_place"
+                               value="entree_codeur">
                     </div>
+                    <label for="codeur_paris_alt">à Paris</label>
                     <span>En 1 an en temps plein (payant)</span>
-                    <div>
+                    <div class="list">
                         <input type="radio"
                                id="codeur_cergy"
                                name="select_place"
@@ -174,14 +174,14 @@
                         <label for="codeur_paris">à Paris</label>
                     </div>
                 <legend>BAC +3 (en 1 an)</legend>
-                <div>
+                <div class="list">
                     <input type="radio"
                            id="lig"
                            name="select_formation"
                            value="entree_lig">
                     <label for="lig">Licence d'Informatique générale</label>
                 </div>
-                <div>
+                <div class="list">
                     <input type="radio"
                            id="cdsmc"
                            name="select_formation"
@@ -189,7 +189,7 @@
                     <label for="cdsmc">Concepteur développeur de solution mobiles et connectées</label>
                 </div>
                 <span>En alternance</span>
-                <div>
+                <div class="list">
                     <input type="radio"
                            id="cdsmc_cergy"
                            name="select_place"
@@ -197,7 +197,7 @@
                     <label for="cdsmc_cergy">à Cergy</label>
                 </div>
                 <span>En temps plein (payant)</span>
-                <div>
+                <div class="list">
                     <input type="radio"
                            id="cdsmc_paris"
                            name="select_place"
@@ -206,100 +206,104 @@
                 </div>
                 <legend>BAC +5</legend>
                 <span>Manager en Ingénierie Informatique</span>
-                <div>
+                <div class="list">
                     <input type="radio"
                            id="mii_l3"
                            name="select_formation"
                            value="entree_mii">
                     <label for="mii_l3">Entrée en L3</label>
                 </div>
-                <div>
+                <div class="list">
                     <input type="radio"
                            id="mii_m1"
                            name="select_formation"
                            value="entree_mii">
                     <label for="mii_m1">Entrée en M1, spécialisation</label>
                 </div>
-                <div>
-                    <div>
-                        <input type="radio"
-                               id="msc_cyb"
-                               name="select_option"
-                               value="entree_mii">
-                        <label for="msc_cyb">MSC Cybersécurité</label>
-                    </div>
-                    <div>
-                        <input type="radio"
-                               id="msc_rs"
-                               name="select_option"
-                               value="entree_mii">
-                        <label for="msc_rs">MSC Réseaux & Systèmes</label>
-                    </div>
-                    <div>
-                        <input type="radio"
-                               id="msc_bigdata"
-                               name="select_option"
-                               value="entree_mii">
-                        <label for="msc_bigdata">MSC Big data & Cloud</label>
-                    </div>
-                    <div>
-                        <input type="radio"
-                               id="msc_gaming"
-                               name="select_option"
-                               value="entree_mii">
-                        <label for="msc_gaming">MSC Gaming & Smart Tech</label>
-                    </div>
-                    <div>
-                        <input type="radio"
-                               id="msc_mana_si"
-                               name="select_option"
-                               value="entree_mii">
-                        <label for="msc_mana_si">MSC Management des SI & Digitalisation</label>
-                    </div>
-                    <div>
-                        <input type="radio"
-                               id="ing_log_sys"
-                               name="select_option"
-                               value="entree_mii">
-                        <label for="ing_log_sys">Ingénierie Logiciels et Systèmes</label>
-                    </div>
-                    <div>
-                        <input type="radio"
-                               id="ing_ia"
-                               name="select_option"
-                               value="entree_mii">
-                        <label for="ing_ia">Ingénierie Artificielle et Applications</label>
+                <div class="list">
+                    <div class="sub-list">
+                        <div>
+                            <input type="radio"
+                                   id="msc_cyb"
+                                   name="select_option"
+                                   value="entree_mii">
+                            <label for="msc_cyb">MSC Cybersécurité</label>
+                        </div>
+                        <div>
+                            <input type="radio"
+                                   id="msc_rs"
+                                   name="select_option"
+                                   value="entree_mii">
+                            <label for="msc_rs">MSC Réseaux & Systèmes</label>
+                        </div>
+                        <div>
+                            <input type="radio"
+                                   id="msc_bigdata"
+                                   name="select_option"
+                                   value="entree_mii">
+                            <label for="msc_bigdata">MSC Big data & Cloud</label>
+                        </div>
+                        <div>
+                            <input type="radio"
+                                   id="msc_gaming"
+                                   name="select_option"
+                                   value="entree_mii">
+                            <label for="msc_gaming">MSC Gaming & Smart Tech</label>
+                        </div>
+                        <div>
+                            <input type="radio"
+                                   id="msc_mana_si"
+                                   name="select_option"
+                                   value="entree_mii">
+                            <label for="msc_mana_si">MSC Management des SI & Digitalisation</label>
+                        </div>
+                        <div>
+                            <input type="radio"
+                                   id="ing_log_sys"
+                                   name="select_option"
+                                   value="entree_mii">
+                            <label for="ing_log_sys">Ingénierie Logiciels et Systèmes</label>
+                        </div>
+                        <div>
+                            <input type="radio"
+                                   id="ing_ia"
+                                   name="select_option"
+                                   value="entree_mii">
+                            <label for="ing_ia">Ingénierie Artificielle et Applications</label>
+                        </div>
                     </div>
                 </div>
-                <div>
+                <div class="list">
                     <input type="radio"
                            id="mii_m2"
                            name="select_formation"
                            value="entree_mii">
                     <label for="mii_m2">Entrée en M2, spécialisation</label>
                 </div>
-                <div>
-                    <div>
-                        <input type="radio"
-                               id="msc_ent_it"
-                               name="select_option"
-                               value="entree_mii">
-                        <label for="msc_ent_it">MSC Entrepreneuriat & IT</label>
+                <div class="list">
+                    <div class="sub-list">
+                        <div>
+                            <input type="radio"
+                                   id="msc_ent_it"
+                                   name="select_option"
+                                   value="entree_mii">
+                            <label for="msc_ent_it">MSC Entrepreneuriat & IT</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="msc_int_it" name="select_option" value="entree_mii">
+                            <label for="msc_int_it">MSC International Business for IT</label>
+                        </div>
                     </div>
-                <div>
-                    <input type="radio" id="msc_int_it" name="select_option" value="entree_mii">
-                    <label for="msc_int_it">MSC International Business for IT</label>
-                </div>
                 </div>
                 <legend>Business Analyste (M1+M2)</legend>
-                <div>
+                <div class="list">
                 <input type="radio"
                        id="perfo_sys_info"
                        name="select_option"
                        value="entree_business_analyste">
                 <label for="perfo_sys_info">Performance et systèmes d'information</label>
                 </div>
-                <div>
+                <div class="list">
                 <input type="radio"
                        id="digi_rh"
                        name="select_option"
@@ -308,12 +312,12 @@
                 </div>
             </article>
         </section>
-        <section>
+        <section class="information">
 
 
             <article>
-                <h2>Vos coordonnées</h2>
-                <div>
+                <h2 class="subtitle">Vos coordonnées</h2>
+                <div class="list">
                     <input type="radio"
                            name="gender"
                            id="female"
@@ -326,71 +330,99 @@
                            value="male"
                            required>
                     <label for="male">M.</label>
+                    <table>
+                        <tr>
+                            <td><label for="last_name">Nom:</label></td>
+                            <td> <input type="text"
+                                        name="last_name"
+                                        id="last_name"
+                                        required></td>
+                            <td><label for="first_name">Prenom:</label></td>
+                            <td><input type="text"
+                                       name="first_name"
+                                       id="first_name"
+                                       required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="address">Adresse:</label></td>
+                            <td><input type="text"
+                                       name="address"
+                                       id="address"
+                                       required></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="postal_code">CP:</label>
+                            </td>
+                            <td>
+                                <input type="text"
+                                       name="postal_code"
+                                       id="postal_code"
+                                       required>
+                            </td>
+                            <td>
+                                <label for="city">Ville:</label>
+                            </td>
+                            <td>
+                                <input type="text"
+                                       name="city"
+                                       id="city"
+                                       required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="phone">Tel. fixe:</label>
+                            </td>
+                            <td>
+                                <input type="tel"
+                                       maxlength="10"
+                                       pattern="[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}"
+                                       name="phone" id="phone"
+                                       required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="gsm">Tel. portable:</label>
+                            </td>
+                            <td>
+                                <input type="tel"
+                                       maxlength="10"
+                                       pattern="[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}"
+                                       name="gsm"
+                                       id="gsm"
+                                       required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="email">Email:</label>
+                            </td>
+                            <td>
+                                <input type="email"
+                                       name="email"
+                                       id="email"
+                                       required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="birthday">Date de naissance:</label>
+                            </td>
+                            <td>
+                                <input type="date"
+                                       name="birthday"
+                                       id="birthday"
+                                       required>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
-                <div>
-                    <label for="last_name">Nom:</label>
-                    <input type="text"
-                           name="last_name"
-                           id="last_name"
-                           required>
-                    <label for="first_name">Prenom:</label>
-                    <input type="text"
-                           name="first_name"
-                           id="first_name"
-                           required>
-                </div>
-                <div>
-                    <label for="address">Adresse:</label>
-                    <input type="text"
-                           name="address"
-                           id="address"
-                           required>
-                </div>
-                <div>
-                    <label for="postal_code">CP:</label>
-                    <input type="text"
-                           name="postal_code"
-                           id="postal_code"
-                           required>
-                    <label for="city">Ville:</label>
-                    <input type="text"
-                           name="city"
-                           id="city"
-                           required>
-                </div>
-                <div>
-                    <label for="phone">Tel. fixe:</label>
-                    <input type="tel"
-                           maxlength="10"
-                           pattern="[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}"
-                           name="phone" id="phone"
-                           required>
-                </div>
-                <div>
-                    <label for="gsm">Tel. portable:</label>
-                    <input type="tel"
-                           maxlength="10"
-                           pattern="[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}"
-                           name="gsm"
-                           id="gsm"
-                           required>
-                </div>
-                <div>
-                    <label for="email">Email:</label>
-                    <input type="email"
-                           name="email"
-                           id="email"
-                           required>
-                </div>
-                <div>
-                    <label for="birthday">Date de naissance:</label>
-                    <input type="date"
-                           name="birthday"
-                           id="birthday"
-                           required>
-                </div>
-                <div>
-                    <legend>Nationalité</legend>
+
+
+                <legend>Nationalité</legend>
+                <div class="list">
                     <input type="radio"
                            name="nationality"
                            id="french"
@@ -414,11 +446,10 @@
 
 
             <article>
-                <h2>Votre scolarité</h2>
-                <div>
-                    <label for="formation">Niveau de formation actuel:</label>
-                    </br>
-                    <select name="formation" id="formation">
+                <h2 class="subtitle">Votre scolarité</h2>
+                <div class="list">
+                    <label>Niveau de formation actuel:</label>
+                    <select class="list" name="formation" id="formation">
                         <option value="none">Sans diplôme</option>
                         <option value="bac">Niveau BAC</option>
                         <option value="bac1">BAC +1</option>
@@ -428,30 +459,34 @@
                         <option value="bac5">BAC +5</option>
                     </select>
                 </div>
-                <div>
+                <div class="list">
                     <label for="school">Etablissement actuel (nom et ville):</label>
                     </br>
-                    <textarea
-                            name="school"
-                            id="school"
-                            required>
+                    <textarea class="scolarity-text"
+                              cols="100"
+                              rows="5"
+                              name="school"
+                              id="school"
+                              required>
                     </textarea>
                 </div>
-                <div>
+                <div class="list">
                     <label for="degree">Dernier diplôme obtenu:</label>
                     </br>
-                    <textarea
-                            name="degree"
-                            id="degree"
-                            required>
+                    <textarea class="scolarity-text"
+                              cols="100"
+                              rows="5"
+                              name="degree"
+                              id="degree"
+                              required>
                     </textarea>
                 </div>
             </article>
 
 
             <article>
-                <h2>Vos autres souhaits de formation à ITESCIA</h2>
-                <div>
+                <h2 class="subtitle">Vos autres souhaits de formation à ITESCIA</h2>
+                <div class="list">
                     <label for="choice_2">N°2:</label>
                     <input type="text"
                            name="choice_2"
@@ -466,7 +501,7 @@
                         <option value="bac5">M2</option>
                     </select>
                 </div>
-                <div>
+                <div class="list">
                     <label for="choice_3">N°3:</label>
                     <input type="text"
                            name="choice_3"
@@ -485,8 +520,8 @@
 
 
             <article>
-                <h2>Votre parrain à ITESCIA</h2>
-                <div>
+                <h2 class="subtitle">Votre parrain à ITESCIA</h2>
+                <div class="list">
                     <label for="last_name_1">Nom:</label>
                     <input type="text"
                            name="last_name"
@@ -498,83 +533,130 @@
                            id="first_name_1"
                            required>
                 </div>
-                <div>
+                <div class="list">
                     <label for="formation_in_progress">Formation suivie:</label>
                     </br>
-                    <textarea
+                    <textarea class="scolarity-text"
+                            cols="100"
+                            rows="5"
                             name="formation_in_progress"
                             id="formation_in_progress"
                             required>
                     </textarea>
                 </div>
                 <h3>FORMATION CONTINUE:</h3>
-                <table>
+                <table class="list">
                   <tr>
-                <ul>
-                    <li>Contrôleur de Gestion
-                        <input type="radio"
-                               name="radio"
-                               id="vae"
-                               required>
-                        <label for="vae">VAE</label>
-                        <input type="radio"
-                               name="radio"
-                               id="part_time"
-                               required>
-                        <label for="part_time">Part-time</label>
-                    </li>
-                    <li>Responsable Management QHSE
-                        <input type="radio"
-                               name="radio"
-                               id="vae_1"
-                               required>
-                        <label for="vae_1">VAE</label>
-                        <input type="radio"
-                               name="radio"
-                               id="part_time_1"
-                               required>
-                        <label for="part_time_1">Part-time</label>
-                    </li>
-                    <li>Manager en ingénierie informatique:
-                        <input type="radio"
-                               name="radio"
-                               id="vae_2"
-                               required>
-                        <label for="vae_2">VAE</label>
-                        <input type="radio"
-                               name="radio"
-                               id="part_time_2"
-                               required>
-                        <label for="part_time_2">Part-time</label>
-                    </li>
-                    <li>Business Analyst:
-                        <input type="radio"
-                               name="radio"
-                               id="part_time_3"
-                               required>
-                        <label for="part_time_3">Part-time</label>
-                    </li>
-                    <li>Manager de la sécurité des risques de l'information:
-                        <input type="radio"
-                               name="radio"
-                               id="part_time_4"
-                               required>
-                        <label for="part_time_4">Part-time</label>
-                    </li>
-                </ul>
-                </tr>
+                      <td>
+                          Contrôleur de Gestion
+                      </td>
+                      <td>
+                          <input type="radio"
+                                 name="radio"
+                                 id="vae"
+                                 required>
+                      </td>
+                      <td>
+                          <label for="vae">VAE</label>
+                      </td>
+                      <td>
+                          <input type="radio"
+                                 name="radio"
+                                 id="part_time"
+                                 required>
+                      </td>
+                      <td>
+                          <label for="part_time">Part-time</label>
+                      </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Responsable Management QHSE
+                        </td>
+                        <td>
+                            <input type="radio"
+                                   name="radio"
+                                   id="vae_1"
+                                   required>
+                        </td>
+                        <td>
+                            <label for="vae_1">VAE</label>
+                        </td>
+                        <td>
+                            <input type="radio"
+                                   name="radio"
+                                   id="part_time_1"
+                                   required>
+                        </td>
+                        <td>
+                            <label for="part_time_1">Part-time</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Manager en ingénierie informatique:
+                        </td>
+                        <td>
+                            <input type="radio"
+                                   name="radio"
+                                   id="vae_2"
+                                   required>
+                        </td>
+                        <td>
+                            <label for="vae_2">VAE</label>
+                        </td>
+                        <td>
+                            <input type="radio"
+                                   name="radio"
+                                   id="part_time_2"
+                                   required>
+                        </td>
+                        <td>
+                            <label for="part_time_2">Part-time</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Business Analyst:
+                        </td>
+                        <td>
+                            <input type="radio"
+                                   name="radio"
+                                   id="part_time_3"
+                                   required>
+                        </td>
+                        <td>
+                            <label for="part_time_3">Part-time</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        Manager de la sécurité des risques de l'information:
+                        </td>
+                        <td>
+                            <input type="radio"
+                                   name="radio"
+                                   id="part_time_4"
+                                   required>
+                        </td>
+                        <td>
+                            <label for="part_time_4">Part-time</label>
+                        </td>
+                    </tr>
               </table>
                 <h4>Votre situation:</h4>
-                <div>
+                <div class="list">
                     <input type="radio"
                            name="radio_1"
                            id="radio_employe"
                            required>
                     <label for="radio_employe">Salarié(e),de l'entreprise</label>
-                    <textarea
-                            name="radio_1"
-                            id="text_employe_1"
-                            required>
+                    <textarea class="scolarity-text"
+                              cols="100"
+                              rows="3"
+                              name="radio_1"
+                              id="text_employe_1"
+                              required>
                     </textarea>
                     </br>
                     <input type="radio"
@@ -594,15 +676,17 @@
                            id="radio_other"
                            required>
                     <label for="radio_other">Autre:</label>
-                    <textarea
-                            name="radio_1"
-                            id="text_other"
-                            required>
+                    <textarea class="scolarity-text"
+                              cols="100"
+                              rows="3"
+                              name="radio_1"
+                              id="text_other"
+                              required>
                     </textarea>
                 </div>
             </article>
         </section>
-        <button>Envoie</button>
+        <button class="btn-send">Envoie</button>
     </form>
 </body>
 <footer>
