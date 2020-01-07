@@ -1,0 +1,56 @@
+form {
+display: flex;
+background-color: grey;
+margin-bottom: 0;
+}
+
+.footersocial {
+
+	text-align:center;
+	color: white;
+	text-decoration: none;
+	
+}
+
+.footertext {
+	font-size: 10px;
+	color: white;
+	margin-left: 10px;
+	margin-top: 8px;
+}
+
+footer {
+	background-color: #91283b;
+	height: 120px;
+
+}
+
+.icon {
+	text-decoration: none;
+	position: relative; top: 5px
+}
+
+body {
+margin: 0;
+}
+
+.section_2 {
+	margin-left: 150px;
+}
+
+.section_1 {
+	margin-left: 1000px;
+}
+
+.article {
+	margin-left: 100px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.footersocial_1 {
+	text-align:center;
+	color: white;
+	text-decoration: none;
+	
+}
