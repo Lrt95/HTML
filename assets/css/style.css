@@ -1,3 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:900i');
+
+button {
+    -webkit-appearance: button;
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: black;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    background-color: #970002;
+    box-sizing: border-box;
+    margin: 0em;
+    font: 400 11px system-ui;
+    padding: 1px 7px 2px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(216, 216, 216) rgb(209, 209, 209) rgb(186, 186, 186);
+    border-image: initial;
+}
 header li {
     display: flex;
 flex-direction();
@@ -17,13 +43,14 @@ flex-direction();
     justify-content: left;
 }
 
-input[type="text"] {
+
+input:hover[type="text"] {
     border-radius: 5px;
     border-style: groove;
     padding: 2px;
 }
 
-input[type="number"] {
+input:hover[type="number"] {
     border-radius: 5px;
     border-style: groove;
     padding: 2px;
@@ -35,27 +62,56 @@ textarea {
     padding: 2px;
 }
 
-header a {
-    color: darkred;
+header a:hover{
+    position: relative;
+    font-size: 35px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
     text-decoration: none;
-    font-size:150%;
-     font-family:arial, sans-serif;
-    text-shadow: 2px 2px 5px black ;
-    position: relative; bottom: 30px;
-    margin:0;
+    cursor: pointer;
 
+    border-bottom: 1px solid #1b92c8;
+    border-left  : 50px solid transparent;
+    border-right : 50px solid transparent;
+    height : 0;
+    width  : 1px;
+    margin-left: 2px;
 
+    text-align: center;
+    background-image:linear-gradient(#1d86c8, #1d96d8) ;
+    padding: 15px 15px 30px;
+    display: flex;
+    justify-content: center ;
+    border-radius: 50px;
+    box-shadow: 1px 1px 1px #279ac4, -0.1em 0.1em 1em #09364b;
+
+}  header a {
+       text-decoration: none;
+    border-bottom: 1px solid #1d96d8;
+    border-left  : 50px solid transparent;
+    border-right : 50px solid transparent;
+    height : 0;
+    width  : 1px;
+    margin-left: 2px;
+
+    text-align: center;
+    color: black;
+    background-image:linear-gradient(#1d96d8, #1da9ea) ;
+    padding: 10px 10px 25px;
+    display: flex;
+    justify-content: center ;
+    border-radius: 10px;
 }
 
-header{
-    margin: 0;
-}
+
+
+
 
 header ul{
     background: #1ca8e0;
-    height: 10px;
+    height: 50px;
     display: flex;
-    flex-direction();
     list-style-type: none;
     padding: 20px;
     justify-content: center ;
@@ -66,7 +122,7 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-body section {
+body section{
     margin: 10px;
     border: thick double black;
     padding: 10px;
