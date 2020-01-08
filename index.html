@@ -331,6 +331,7 @@
             </article>
         </section>
         <section>
+            <div class="border-line"></div>
 
 
                 <article>
@@ -467,7 +468,7 @@
                     <h2 class="subtitle">Votre scolarité</h2>
                     <div class="list">
                         <label for="formation">Niveau de formation actuel:</label>
-                        <select class="list" name="formation" id="formation">
+                        <select name="formation" id="formation">
                             <option value="none">Sans diplôme</option>
                             <option value="bac">Niveau BAC</option>
                             <option value="bac1">BAC +1</option>
@@ -478,22 +479,30 @@
                         </select>
                     </div>
                     <div class="flex-col">
-                        <label for="school">Etablissement actuel (nom et ville):</label>
-                        <textarea class="scolarity-text"
-                                  cols="100"
-                                  rows="5"
-                                  name="school"
-                                  id="school"
-                        ></textarea>
+                        <div class="list">
+                            <div>
+                                <label for="school">Etablissement actuel (nom et ville):</label>
+                            </div>
+                            <textarea class="scolarity-text"
+                                      cols="100"
+                                      rows="5"
+                                      name="school"
+                                      id="school"
+                            ></textarea>
+                        </div>
                     </div>
                     <div class="flex-col">
-                        <label for="degree">Dernier diplôme obtenu:</label>
-                        <textarea class="scolarity-text"
-                                  cols="100"
-                                  rows="5"
-                                  name="degree"
-                                  id="degree"
-                        ></textarea>
+                        <div class="list">
+                            <div>
+                                <label for="degree">Dernier diplôme obtenu:</label>
+                            </div>
+                            <textarea class="scolarity-text"
+                                      cols="100"
+                                      rows="5"
+                                      name="degree"
+                                      id="degree"
+                            ></textarea>
+                        </div>
                     </div>
                 </article>
 
@@ -596,25 +605,30 @@
                 <article>
                     <h2 class="subtitle">Votre parrain à ITESCIA</h2>
                     <div class="list">
-                        <label for="last_name_1">Nom:</label>
-                        <input type="text"
-                               name="last_name"
-                               id="last_name_1"
-                        >
-                        <label for="first_name_1">Prenom:</label>
-                        <input type="text"
-                               name="first_name"
-                               id="first_name_1"
-                        >
+                        <div class="flex-responsive">
+                            <label for="last_name_1">Nom:</label>
+                            <input type="text"
+                                   name="last_name"
+                                   id="last_name_1">
+                            <label for="first_name_1">Prenom:</label>
+                            <input type="text"
+                                   name="first_name"
+                                   id="first_name_1"
+                            >
+                        </div>
                     </div>
                     <div class="flex-col">
-                        <label for="formation_in_progress">Formation suivie:</label>
-                        <textarea class="scolarity-text"
-                                  cols="100"
-                                  rows="5"
-                                  name="formation_in_progress"
-                                  id="formation_in_progress"
-                        ></textarea>
+                        <div class="list">
+                            <div>
+                                <label for="formation_in_progress">Formation suivie:</label>
+                            </div>
+                            <textarea class="scolarity-text"
+                                      cols="100"
+                                      rows="5"
+                                      name="formation_in_progress"
+                                      id="formation_in_progress"
+                            ></textarea>
+                        </div>
                     </div>
                     <h3>FORMATION CONTINUE:</h3>
                     <table class="list">

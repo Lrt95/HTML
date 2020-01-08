@@ -121,9 +121,6 @@ body section {
     margin: 10px;
     padding: 10px;
     width: 50%;
-    border: thick double black;
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px black, -0.2em 0.2em 1em black;
 }
 
 body section:last-child {
@@ -147,6 +144,10 @@ body label {
 
 body span {
     font-size: 15px;
+}
+
+body select {
+    width: 100%;
 }
 
 footer {
@@ -297,6 +298,37 @@ input {
         font-size: 1vw;
         top:-3px;
     }
+
+    .flex-responsive {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+    }
+
+    body form {
+        flex-wrap: wrap;
+    }
+
+    body td {
+        display: block;
+    }
+
+    input[type="date"] {
+        width: 74%;
+    }
+
+    input[type="text"] {
+        width: 75%;
+    }
+
+    input[type="tel"] {
+        width: 75%;
+    }
+
+    input[type="email"] {
+        width: 75%;
+    }
+
 }
 
 .powered{
@@ -335,4 +367,11 @@ input {
     position: absolute;
     width: 100%;
     bottom: 100px;
+}
+
+.border-line {
+    height: 100%;
+    border-right: 1px solid blue;
+    position: absolute;
+
 }
