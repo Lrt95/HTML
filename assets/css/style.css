@@ -31,8 +31,6 @@ header a {
 header{
     margin: 0;
 
-    background: green;
-
 }
 
 header ul{
@@ -93,7 +91,7 @@ body span {
 
 footer {
     background-color: #91283b;
-    height: 180px;
+    height: 200px;
 
 
 }
