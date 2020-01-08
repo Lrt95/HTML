@@ -98,7 +98,7 @@ body span {
 
 footer {
     background-color: #91283b;
-    height: 180px;
+    height: auto;
 }
 
 .btn-send {
@@ -160,7 +160,7 @@ footer {
 .icon {
     text-decoration: none;
     position: relative;
-    top: 30px
+    top: 30px;
 }
 
 .list {
@@ -172,42 +172,36 @@ input {
     border-radius: 1px;
 }
 
-
-.banniere_management{
-   /* width: 200px;
-    height:50px;
-    background: green;*/
+.banniere_management, .banniere_management1 {
     border-bottom: 70px solid #DC143C;
-  border-left  : 0px solid transparent;
-  border-right : 110px solid transparent;
-  height : 0;
-  width  : 360px;
-  margin-left: 20px;
-  position: relative;
- z-index: 2
+    border-left  : 0px solid transparent;
+    border-right : 110px solid transparent;
 
+    height : 0;
+    width  : 54%;
 
+    margin-left: 20px;
+
+    position: relative;
+    z-index: 2;
 }
+
 .rectangle{
     width: 12px;
     height: 70px;
     background-color: #DC143C;
     position:absolute;
-    z-index: 3
+
+    
 
 }
 .banniere_management1{
-   /* width: 200px;
-    height:50px;
-    background: green;*/
     opacity:0.6;
-    border-bottom: 70px solid #DC143C;
-  border-left  : 0px solid transparent;
-  border-right : 110px solid transparent;
-  height : 0;
-  width  : 360px;
-  margin-left: 15px;
-  position: relative; top: 5px;z-index: 1
+    width  : 100%;
+    margin-left: 15px;
+    position: absolute;
+    top: 5px;
+    z-index: 1
  }
 .rectangle1{
     opacity:0.6;
@@ -220,19 +214,44 @@ input {
 
 }
 .text-banniere{
-    margin-left: 60px;
-    position:absolute;
+    margin-left: 20%;
+    position:relative;
     top: 20px;
     z-index:2;
-    font-size:150%;
+    font-size:2vw;
      font-family:arial, sans-serif;
     color: white;
     text-shadow: 2px 2px 5px black ;
-
+    width: 10%;
 }
+
+
+@media screen and (max-width: 950px) {
+    .banniere_management{
+        border-bottom: 20px solid #DC143C;
+        width:22%;
+    }
+    .banniere_management1{
+        border-bottom: 22px solid #DC143C;
+        width: 110%;
+        top: 2px;
+
+    }
+    .rectangle {
+      
+        height: 20px;
+ }.rectangle1 {
+        height: 19px;
+ }
+    .text-banniere{
+        font-size: 1vw;
+        top:-3px;
+    }
+}
+
 .powered{
-    height: 39px;
-    width: 300px;
+    height: auto;
+    width: 12%;
     margin-left: 83%;
 }
 
@@ -256,7 +275,10 @@ button {
     font: 400 11px system-ui;
     padding: 1px 7px 2px;
     border-width: 1px;
-    border-style: solid;
+    border-style: solid;#
     border-color: rgb(216, 216, 216) rgb(209, 209, 209) rgb(186, 186, 186);
     border-image: initial;
+}
+aside{
+    width:100%;
 }
