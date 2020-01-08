@@ -1,6 +1,5 @@
-<!DOCTYOPE HTML>
+<!DOCTYPE HTML>
 <html lang="fr">
-
 <head>
     <meta charset="utf-8">
     <title>Formulaire informations Itescia</title>
@@ -11,14 +10,22 @@
 
 
 <header>
-    <figure>
-        <img class="displayed1" id="conteneur" src="assets/image/itescia.png" alt="Logo itescia" height="100px">
-        <img class="displayed" id="itesciaB" src="assets/image/itescia_bandeau.png" alt="bandeau itescia" height="100px">
+    <figure class="flex-center">
+        <div>
+            <img class="displayed1" id= "conteneur" src="assets/image/itescia.png"
+                 alt="Logo itescia"
+                 height="100px">
+        </div>
+        <div>
+            <img class="displayed" id= "itesciaB" src="assets/image/itescia_bandeau.png"
+                 alt="bandeau itescia"
+                 height="100px">
+        </div>
     </figure>
     <nav>
         <ul>
             <li><a id="acceuil" href="#">Accueil</a></li>
-            <li><a id="itescia" href="#">Itescia</a></li>
+            <li><a id="itescia" href="https://www.itescia.fr/" target="_blank">Itescia</a></li>
         </ul>
     </nav>
 </header>
@@ -30,161 +37,261 @@
         <section>
             <h2 class="subtitle">Votre 1er choix de formation à Itescia</h2>
             <aside>
-                <img src="assets/image/banniere_gestion.png" alt="logo gestion" height="65px">
+                <img src="assets/image/banniere_gestion.png"
+                     alt="logo gestion"
+                     height="65px">
             </aside>
             <article class="gestion">
                 <legend>BAC +2</legend>
                 <div class="list">
-                    <input type="radio" id="bts_cg" name="select_formation" value="bts_cg">
+                    <input type="radio"
+                           id="bts_cg"
+                           name="select_formation"
+                           value="bts_cg">
                     <label for="bts_cg">BTS CG</label>
                 </div>
                 <legend>BAC +3</legend>
                 <span>DCG :</span>
                 <div class="list">
-                    <input type="radio" id="dcg_l1" name="select_formation" value="entree_l1">
+                    <input type="radio"
+                           id="dcg_l1"
+                           name="select_formation"
+                           value="entree_l1">
                     <label for="dcg_l1">Entree L1</label>
-                    <input type="radio" id="dcg_l2" name="select_formation" value="entree_l2">
+                    <input type="radio"
+                           id="dcg_l2"
+                           name="select_formation"
+                           value="entree_l2">
                     <label for="dcg_l2">Entree L2</label>
                 </div>
                 <legend>BAC +4</legend>
                 <span>Contrôleur de gestion :</span>
                 <div class="list">
-                    <input type="radio" id="bac4_l3" name="select_formation" value="entree_l3">
+                    <input type="radio"
+                           id="bac4_l3"
+                           name="select_formation"
+                           value="entree_l3">
                     <label for="bac4_l3">Entree L3</label>
-                    <input type="radio" id="bac_m1" name="select_formation" value="entree_m1">
+                    <input type="radio"
+                           id="bac_m1"
+                           name="select_formation"
+                           value="entree_m1">
                     <label for="bac_m1">Entree M1</label>
                 </div>
                 <legend>BAC +5</legend>
                 <div class="list">
-                    <input type="radio" id="bac5" name="select_formation" value="entree_m1">
+                    <input type="radio"
+                           id="bac5"
+                           name="select_formation"
+                           value="entree_m1">
                     <label for="bac5">DSCG (Entree M1)</label>
                 </div>
             </article>
 
 
             <aside>
-                <img src="assets/image/banniere_management.png" height="65px">
+                <img src="assets/image/banniere_management.png"
+                     height="65px">
             </aside>
             <article class="management">
                 <legend>BAC +4</legend>
                 <span>Responsable de systeme de management QHSE</span>
                 <div class="list">
-                    <input type="radio" id="rsmqhse_l3" name="select_formation" value="entree_l3">
+                    <input type="radio"
+                           id="rsmqhse_l3"
+                           name="select_formation"
+                           value="entree_l3">
                     <label for="rsmqhse_l3">Entree en L3</label>
-                    <input type="radio" id="rsmqhse_m1" name="select_formation" value="entree_m1">
+                    <input type="radio"
+                           id="rsmqhse_m1"
+                           name="select_formation"
+                           value="entree_m1">
                     <label for="rsmqhse_m1">Entree en M1</label>
                 </div>
                 <span>Responsable Ressources Humaines</span>
                 <div class="list">
-                    <input type="radio" id="rrh_l3" name="select_formation" value="entree_l3">
+                    <input type="radio"
+                           id="rrh_l3"
+                           name="select_formation"
+                           value="entree_l3">
                     <label for="rrh_l3">Entree en L3</label>
-                    <input type="radio" id="rrh_m1" name="select_formation" value="entree_m1">
+                    <input type="radio"
+                           id="rrh_m1"
+                           name="select_formation"
+                           value="entree_m1">
                     <label for="rrh_m1">Entree en M1</label>
                 </div>
                 <legend>BAC +5</legend>
                 <div class="list">
-                    <input type="radio" id="mqpi" name="select_formation" value="entree_m2">
+                    <input type="radio"
+                           id="mqpi"
+                           name="select_formation"
+                           value="entree_m2">
                     <label for="mqpi">Manager Qualité et Processus Intelligents (entrée en M2)</label>
                 </div>
             </article>
 
 
             <aside>
-                <img src="assets/image/banniere_informatique.png" height="65px">
+                <img src="assets/image/banniere_informatique.png"
+                     height="65px">
             </aside>
             <article class="informatique">
                 <legend>BAC +2</legend>
                 <div class="list">
-                    <input type="radio" id="bts_sio" name="select_formation" value="entree_bts_sio">
+                    <input type="radio"
+                           id="bts_sio"
+                           name="select_formation"
+                           value="entree_bts_sio">
                     <label for="bts_sio">BTS SIO, option SISR ou SLAM</label>
                 </div>
                 <div class="list">
-                    <input type="radio" id="codeur_informatique" name="select_formation" value="entree_codeur">
+                    <input type="radio"
+                           id="codeur_informatique"
+                           name="select_formation"
+                           value="entree_codeur">
                     <label for="codeur_informatique">Codeur informatique</label>
                 </div>
                 <span>En 2 ans en alternance</span>
                 <div class="list">
-                    <input type="radio" id="codeur_cergy_alt" name="select_place" value="entree_codeur">
+                    <input type="radio"
+                           id="codeur_cergy_alt"
+                           name="select_place"
+                           value="entree_codeur">
                     <label for="codeur_cergy_alt">à Cergy</label>
-                    <input type="radio" id="codeur_paris_alt" name="select_place" value="entree_codeur">
+                    <input type="radio"
+                           id="codeur_paris_alt"
+                           name="select_place"
+                           value="entree_codeur">
                 </div>
                 <label for="codeur_paris_alt">à Paris</label>
                 <span>En 1 an en temps plein (payant)</span>
                 <div class="list">
-                    <input type="radio" id="codeur_cergy" name="select_place" value="entree_codeur">
+                    <input type="radio"
+                           id="codeur_cergy"
+                           name="select_place"
+                           value="entree_codeur">
                     <label for="codeur_cergy">à Cergy</label>
-                    <input type="radio" id="codeur_paris" name="select_place" value="entree_codeur">
+                    <input type="radio"
+                           id="codeur_paris"
+                           name="select_place"
+                           value="entree_codeur">
                     <label for="codeur_paris">à Paris</label>
                 </div>
                 <legend>BAC +3 (en 1 an)</legend>
                 <div class="list">
-                    <input type="radio" id="lig" name="select_formation" value="entree_lig">
+                    <input type="radio"
+                           id="lig"
+                           name="select_formation"
+                           value="entree_lig">
                     <label for="lig">Licence d'Informatique générale</label>
                 </div>
                 <div class="list">
-                    <input type="radio" id="cdsmc" name="select_formation" value="entree_cdsmc">
+                    <input type="radio"
+                           id="cdsmc"
+                           name="select_formation"
+                           value="entree_cdsmc">
                     <label for="cdsmc">Concepteur développeur de solution mobiles et connectées</label>
                 </div>
                 <span>En alternance</span>
                 <div class="list">
-                    <input type="radio" id="cdsmc_cergy" name="select_place" value="entree_cdsmc">
+                    <input type="radio"
+                           id="cdsmc_cergy"
+                           name="select_place"
+                           value="entree_cdsmc">
                     <label for="cdsmc_cergy">à Cergy</label>
                 </div>
                 <span>En temps plein (payant)</span>
                 <div class="list">
-                    <input type="radio" id="cdsmc_paris" name="select_place" value="entree_cdsmc">
+                    <input type="radio"
+                           id="cdsmc_paris"
+                           name="select_place"
+                           value="entree_cdsmc">
                     <label for="cdsmc_paris">à Paris</label>
                 </div>
                 <legend>BAC +5</legend>
                 <span>Manager en Ingénierie Informatique</span>
                 <div class="list">
-                    <input type="radio" id="mii_l3" name="select_formation" value="entree_mii">
+                    <input type="radio"
+                           id="mii_l3"
+                           name="select_formation"
+                           value="entree_mii">
                     <label for="mii_l3">Entrée en L3</label>
                 </div>
                 <div class="list">
-                    <input type="radio" id="mii_m1" name="select_formation" value="entree_mii">
+                    <input type="radio"
+                           id="mii_m1"
+                           name="select_formation"
+                           value="entree_mii">
                     <label for="mii_m1">Entrée en M1, spécialisation</label>
                 </div>
                 <div class="list">
                     <div class="sub-list">
                         <div>
-                            <input type="radio" id="msc_cyb" name="select_option" value="entree_mii">
+                            <input type="radio"
+                                   id="msc_cyb"
+                                   name="select_option"
+                                   value="entree_mii">
                             <label for="msc_cyb">MSC Cybersécurité</label>
                         </div>
                         <div>
-                            <input type="radio" id="msc_rs" name="select_option" value="entree_mii">
+                            <input type="radio"
+                                   id="msc_rs"
+                                   name="select_option"
+                                   value="entree_mii">
                             <label for="msc_rs">MSC Réseaux & Systèmes</label>
                         </div>
                         <div>
-                            <input type="radio" id="msc_bigdata" name="select_option" value="entree_mii">
+                            <input type="radio"
+                                   id="msc_bigdata"
+                                   name="select_option"
+                                   value="entree_mii">
                             <label for="msc_bigdata">MSC Big data & Cloud</label>
                         </div>
                         <div>
-                            <input type="radio" id="msc_gaming" name="select_option" value="entree_mii">
+                            <input type="radio"
+                                   id="msc_gaming"
+                                   name="select_option"
+                                   value="entree_mii">
                             <label for="msc_gaming">MSC Gaming & Smart Tech</label>
                         </div>
                         <div>
-                            <input type="radio" id="msc_mana_si" name="select_option" value="entree_mii">
+                            <input type="radio"
+                                   id="msc_mana_si"
+                                   name="select_option"
+                                   value="entree_mii">
                             <label for="msc_mana_si">MSC Management des SI & Digitalisation</label>
                         </div>
                         <div>
-                            <input type="radio" id="ing_log_sys" name="select_option" value="entree_mii">
+                            <input type="radio"
+                                   id="ing_log_sys"
+                                   name="select_option"
+                                   value="entree_mii">
                             <label for="ing_log_sys">Ingénierie Logiciels et Systèmes</label>
                         </div>
                         <div>
-                            <input type="radio" id="ing_ia" name="select_option" value="entree_mii">
+                            <input type="radio"
+                                   id="ing_ia"
+                                   name="select_option"
+                                   value="entree_mii">
                             <label for="ing_ia">Ingénierie Artificielle et Applications</label>
                         </div>
                     </div>
                 </div>
                 <div class="list">
-                    <input type="radio" id="mii_m2" name="select_formation" value="entree_mii">
+                    <input type="radio"
+                           id="mii_m2"
+                           name="select_formation"
+                           value="entree_mii">
                     <label for="mii_m2">Entrée en M2, spécialisation</label>
                 </div>
                 <div class="list">
                     <div class="sub-list">
                         <div>
-                            <input type="radio" id="msc_ent_it" name="select_option" value="entree_mii">
+                            <input type="radio"
+                                   id="msc_ent_it"
+                                   name="select_option"
+                                   value="entree_mii">
                             <label for="msc_ent_it">MSC Entrepreneuriat & IT</label>
                         </div>
                         <div>
@@ -195,270 +302,389 @@
                 </div>
                 <legend>Business Analyste (M1+M2)</legend>
                 <div class="list">
-                    <input type="radio" id="perfo_sys_info" name="select_option" value="entree_business_analyste">
+                    <input type="radio"
+                           id="perfo_sys_info"
+                           name="select_option"
+                           value="entree_business_analyste">
                     <label for="perfo_sys_info">Performance et systèmes d'information</label>
                 </div>
                 <div class="list">
-                    <input type="radio" id="digi_rh" name="select_option" value="entree_business_analyste">
+                    <input type="radio"
+                           id="digi_rh"
+                           name="select_option"
+                           value="entree_business_analyste">
                     <label for="digi_rh">Digitalisation RH</label>
                 </div>
             </article>
         </section>
-        <section class="information">
+        <section>
 
 
-            <article>
-                <h2 class="subtitle">Vos coordonnées</h2>
-                <div class="list">
-                    <input type="radio" name="gender" id="female" value="female" required>
-                    <label for="female">Mme.</label>
-                    <input type="radio" name="gender" id="male" value="male" required>
-                    <label for="male">M.</label>
-                    <table>
+                <article>
+                    <h2 class="subtitle">Vos coordonnées</h2>
+                    <div class="list">
+                        <input type="radio"
+                               name="gender"
+                               id="female"
+                               value="female"
+                               required>
+                        <label for="female">Mme.</label>
+                        <input type="radio"
+                               name="gender"
+                               id="male"
+                               value="male"
+                               required>
+                        <label for="male">M.</label>
+                        <table>
+                            <tr>
+                                <td><label for="last_name">Nom:</label></td>
+                                <td> <input type="text"
+                                            name="last_name"
+                                            id="last_name"
+                                            required></td>
+                                <td><label for="first_name">Prenom:</label></td>
+                                <td><input type="text"
+                                           name="first_name"
+                                           id="first_name"
+                                           required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="address">Adresse:</label></td>
+                                <td><input type="text"
+                                           name="address"
+                                           id="address"
+                                           required></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="postal_code">CP:</label>
+                                </td>
+                                <td>
+                                    <input type="text"
+                                           name="postal_code"
+                                           id="postal_code"
+                                           required>
+                                </td>
+                                <td>
+                                    <label for="city">Ville:</label>
+                                </td>
+                                <td>
+                                    <input type="text"
+                                           name="city"
+                                           id="city"
+                                           required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="phone">Tel. fixe:</label>
+                                </td>
+                                <td>
+                                    <input type="tel"
+                                           maxlength="10"
+                                           pattern="[0-9]{10}"
+                                           name="phone" id="phone"
+                                           required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="gsm">Tel. portable:</label>
+                                </td>
+                                <td>
+                                    <input type="tel"
+                                           maxlength="10"
+                                           pattern="[0-9]{10}"
+                                           name="gsm"
+                                           id="gsm"
+                                           required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="email">Email:</label>
+                                </td>
+                                <td>
+                                    <input type="email"
+                                           name="email"
+                                           id="email"
+                                           required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="birthday">Date de naissance:</label>
+                                </td>
+                                <td>
+                                    <input type="date"
+                                           name="birthday"
+                                           id="birthday"
+                                           required>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+
+                    <legend>Nationalité</legend>
+                    <div class="list">
+                        <input type="radio"
+                               name="nationality"
+                               id="french"
+                               value="french"
+                               required>
+                        <label for="french">Française</label>
+                        <input type="radio"
+                               name="nationality"
+                               id="ue"
+                               value="ue"
+                               required>
+                        <label for="ue">UE</label>
+                        <input type="radio"
+                               name="nationality"
+                               id="other"
+                               value="other"
+                               required>
+                        <label for="other">Hors UE</label>
+                    </div>
+                </article>
+
+
+                <article>
+                    <h2 class="subtitle">Votre scolarité</h2>
+                    <div class="list">
+                        <label for="formation">Niveau de formation actuel:</label>
+                        <select class="list" name="formation" id="formation">
+                            <option value="none">Sans diplôme</option>
+                            <option value="bac">Niveau BAC</option>
+                            <option value="bac1">BAC +1</option>
+                            <option value="bac2">BAC +2</option>
+                            <option value="bac3">BAC +3</option>
+                            <option value="bac4">BAC +4</option>
+                            <option value="bac5">BAC +5</option>
+                        </select>
+                    </div>
+                    <div class="flex-col">
+                        <label for="school">Etablissement actuel (nom et ville):</label>
+                        <textarea class="scolarity-text"
+                                  cols="100"
+                                  rows="5"
+                                  name="school"
+                                  id="school"
+                        ></textarea>
+                    </div>
+                    <div class="flex-col">
+                        <label for="degree">Dernier diplôme obtenu:</label>
+                        <textarea class="scolarity-text"
+                                  cols="100"
+                                  rows="5"
+                                  name="degree"
+                                  id="degree"
+                        ></textarea>
+                    </div>
+                </article>
+
+
+                <article>
+                    <h2 class="subtitle">Vos autres souhaits de formation à ITESCIA</h2>
+                    <div class="list">
+                        <label for="choice_2">N°2:</label>
+                        <input type="text"
+                               name="choice_2"
+                               id="choice_2"
+                        >
+                        <label for="level_2">Niveau d'entrée</label>
+                        <select name="level" id="level_2">
+                            <option value="bac1">L1</option>
+                            <option value="bac2">L2</option>
+                            <option value="bac3">L3</option>
+                            <option value="bac4">M1</option>
+                            <option value="bac5">M2</option>
+                        </select>
+                    </div>
+                    <div class="list">
+                        <label for="choice_3">N°3:</label>
+                        <input type="text"
+                               name="choice_3"
+                               id="choice_3"
+                        >
+                        <label for="level_3">Niveau d'entrée</label>
+                        <select name="level" id="level_3">
+                            <option value="bac1">L1</option>
+                            <option value="bac2">L2</option>
+                            <option value="bac3">L3</option>
+                            <option value="bac4">M1</option>
+                            <option value="bac5">M2</option>
+                        </select>
+                    </div>
+                </article>
+
+
+                <article>
+                    <h2 class="subtitle">Votre parrain à ITESCIA</h2>
+                    <div class="list">
+                        <label for="last_name_1">Nom:</label>
+                        <input type="text"
+                               name="last_name"
+                               id="last_name_1"
+                        >
+                        <label for="first_name_1">Prenom:</label>
+                        <input type="text"
+                               name="first_name"
+                               id="first_name_1"
+                        >
+                    </div>
+                    <div class="flex-col">
+                        <label for="formation_in_progress">Formation suivie:</label>
+                        <textarea class="scolarity-text"
+                                  cols="100"
+                                  rows="5"
+                                  name="formation_in_progress"
+                                  id="formation_in_progress"
+                        ></textarea>
+                    </div>
+                    <h3>FORMATION CONTINUE:</h3>
+                    <table class="list">
                         <tr>
-                            <td><label for="last_name">Nom:</label></td>
-                            <td> <input type="text" name="last_name" id="last_name" required></td>
-                            <td><label for="first_name">Prenom:</label></td>
-                            <td><input type="text" name="first_name" id="first_name" required></td>
+                            <td>
+                                Contrôleur de Gestion
+                            </td>
+                            <td>
+                                <input type="radio"
+                                       name="radio"
+                                       id="vae"
+                                >
+                            </td>
+                            <td>
+                                <label for="vae">VAE</label>
+                            </td>
+                            <td>
+                                <input type="radio"
+                                       name="radio"
+                                       id="part_time"
+                                >
+                            </td>
+                            <td>
+                                <label for="part_time">Part-time</label>
+                            </td>
                         </tr>
                         <tr>
-                            <td><label for="address">Adresse:</label></td>
-                            <td><input type="text" name="address" id="address" required></td>
-                        </tr>
-                        <tr>
                             <td>
-                                <label for="postal_code">CP:</label>
+                                Responsable Management QHSE
                             </td>
                             <td>
-                                <input type="text" name="postal_code" id="postal_code" required>
+                                <input type="radio"
+                                       name="radio"
+                                       id="vae_1"
+                                >
                             </td>
                             <td>
-                                <label for="city">Ville:</label>
+                                <label for="vae_1">VAE</label>
                             </td>
                             <td>
-                                <input type="text" name="city" id="city" required>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="phone">Tel. fixe:</label>
+                                <input type="radio"
+                                       name="radio"
+                                       id="part_time_1"
+                                >
                             </td>
                             <td>
-                                <input type="number" maxlength="10" pattern="[0-9]{10}" name="phone" id="phone" required>
+                                <label for="part_time_1">Part-time</label>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <label for="gsm">Tel. portable:</label>
+                                Manager en ingénierie informatique:
                             </td>
                             <td>
-                                <input type="number" maxlength="10" pattern="[0-9]{10}" name="gsm" id="gsm" required>
+                                <input type="radio"
+                                       name="radio"
+                                       id="vae_2"
+                                >
+                            </td>
+                            <td>
+                                <label for="vae_2">VAE</label>
+                            </td>
+                            <td>
+                                <input type="radio"
+                                       name="radio"
+                                       id="part_time_2"
+                                >
+                            </td>
+                            <td>
+                                <label for="part_time_2">Part-time</label>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <label for="email">Email:</label>
+                                Business Analyst:
                             </td>
                             <td>
-                                <input type="email" name="email" id="email" required>
+                                <input type="radio"
+                                       name="radio"
+                                       id="part_time_3"
+                                >
+                            </td>
+                            <td>
+                                <label for="part_time_3">Part-time</label>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <label for="birthday">Date de naissance:</label>
+                                Manager de la sécurité des risques de l'information:
                             </td>
                             <td>
-                                <input type="date" name="birthday" id="birthday" required>
+                                <input type="radio"
+                                       name="radio"
+                                       id="part_time_4"
+                                >
+                            </td>
+                            <td>
+                                <label for="part_time_4">Part-time</label>
                             </td>
                         </tr>
                     </table>
-                </div>
-
-
-                <legend>Nationalité</legend>
-                <div class="list">
-                    <input type="radio" name="nationality" id="french" value="french" required>
-                    <label for="french">Française</label>
-                    <input type="radio" name="nationality" id="ue" value="ue" required>
-                    <label for="ue">UE</label>
-                    <input type="radio" name="nationality" id="other" value="other" required>
-                    <label for="other">Hors UE</label>
-                </div>
-            </article>
-
-
-            <article>
-                <h2 class="subtitle">Votre scolarité</h2>
-                <div class="list">
-                    <label>Niveau de formation actuel:</label>
-                    <select class="list" name="formation" id="formation">
-                        <option value="none">Sans diplôme</option>
-                        <option value="bac">Niveau BAC</option>
-                        <option value="bac1">BAC +1</option>
-                        <option value="bac2">BAC +2</option>
-                        <option value="bac3">BAC +3</option>
-                        <option value="bac4">BAC +4</option>
-                        <option value="bac5">BAC +5</option>
-                    </select>
-                </div>
-                <div class="list">
-                    <label for="school">Etablissement actuel (nom et ville):</label>
-                    </br>
-                    <textarea class="scolarity-text" cols="100" rows="5" name="school" id="school">
-                    </textarea>
-                </div>
-                <div class="list">
-                    <label for="degree">Dernier diplôme obtenu:</label>
-                    </br>
-                    <textarea class="scolarity-text" cols="100" rows="5" name="degree" id="degree">
-                    </textarea>
-                </div>
-            </article>
-
-
-            <article>
-                <h2 class="subtitle">Vos autres souhaits de formation à ITESCIA</h2>
-                <div class="list">
-                    <label for="choice_2">N°2:</label>
-                    <input type="text" name="choice_2" id="choice_2">
-                    <label for="level_2">Niveau d'entrée</label>
-                    <select name="level" id="level_2">
-                        <option value="bac1">L1</option>
-                        <option value="bac2">L2</option>
-                        <option value="bac3">L3</option>
-                        <option value="bac4">M1</option>
-                        <option value="bac5">M2</option>
-                    </select>
-                </div>
-                <div class="list">
-                    <label for="choice_3">N°3:</label>
-                    <input type="text" name="choice_3" id="choice_3">
-                    <label for="level_3">Niveau d'entrée</label>
-                    <select name="level" id="level_3">
-                        <option value="bac1">L1</option>
-                        <option value="bac2">L2</option>
-                        <option value="bac3">L3</option>
-                        <option value="bac4">M1</option>
-                        <option value="bac5">M2</option>
-                    </select>
-                </div>
-            </article>
-
-
-            <article>
-                <h2 class="subtitle">Votre parrain à ITESCIA</h2>
-                <div class="list">
-                    <label for="last_name_1">Nom:</label>
-                    <input type="text" name="last_name" id="last_name_1">
-                    <label for="first_name_1">Prenom:</label>
-                    <input type="text" name="first_name" id="first_name_1">
-                </div>
-                <div class="list">
-                    <label for="formation_in_progress">Formation suivie:</label>
-                    </br>
-                    <textarea class="scolarity-text" cols="100" rows="5" name="formation_in_progress" id="formation_in_progress">
-                    </textarea>
-                </div>
-                <h3>FORMATION CONTINUE:</h3>
-                <table class="list">
-                    <tr>
-                        <td>
-                            Contrôleur de Gestion
-                        </td>
-                        <td>
-                            <input type="radio" name="radio" id="vae">
-                        </td>
-                        <td>
-                            <label for="vae">VAE</label>
-                        </td>
-                        <td>
-                            <input type="radio" name="radio" id="part_time">
-                        </td>
-                        <td>
-                            <label for="part_time">Part-time</label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Responsable Management QHSE
-                        </td>
-                        <td>
-                            <input type="radio" name="radio" id="vae_1">
-                        </td>
-                        <td>
-                            <label for="vae_1">VAE</label>
-                        </td>
-                        <td>
-                            <input type="radio" name="radio" id="part_time_1">
-                        </td>
-                        <td>
-                            <label for="part_time_1">Part-time</label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Manager en ingénierie informatique:
-                        </td>
-                        <td>
-                            <input type="radio" name="radio" id="vae_2">
-                        </td>
-                        <td>
-                            <label for="vae_2">VAE</label>
-                        </td>
-                        <td>
-                            <input type="radio" name="radio" id="part_time_2">
-                        </td>
-                        <td>
-                            <label for="part_time_2">Part-time</label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Business Analyst:
-                        </td>
-                        <td>
-                            <input type="radio" name="radio" id="part_time_3">
-                        </td>
-                        <td>
-                            <label for="part_time_3">Part-time</label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Manager de la sécurité des risques de l'information:
-                        </td>
-                        <td>
-                            <input type="radio" name="radio" id="part_time_4">
-                        </td>
-                        <td>
-                            <label for="part_time_4">Part-time</label>
-                        </td>
-                    </tr>
-                </table>
-                <h4>Votre situation:</h4>
-                <div class="list">
-                    <div>
-                        <input type="radio" name="radio_1" id="radio_employe">
-                        <label for="radio_employe">Salarié(e),de l'entreprise</label>
-                        <input type="text" name="radio_1" id="text_employe_1">
+                    <h4>Votre situation:</h4>
+                    <div class="list">
+                        <div>
+                            <input type="radio"
+                                   name="radio_1"
+                                   id="radio_employe"
+                            >
+                            <label for="radio_employe">Salarié(e),de l'entreprise</label>
+                            <input type="text"
+                                   name="radio_1"
+                                   id="text_employe_1"
+                            >
+                        </div>
+                        <div>
+                            <input type="radio"
+                                   name="radio_1"
+                                   id="radio_jobseeker"
+                            >
+                            <label for="radio_jobseeker">Demandeur d'emploi</label>
+                        </div>
+                        <div>
+                            <input type="radio"
+                                   name="radio_1"
+                                   id="radio_individual"
+                            >
+                            <label for="radio_individual">Particulier</label>
+                        </div>
+                        <div>
+                            <input type="radio"
+                                   name="radio_1"
+                                   id="radio_other"
+                            >
+                            <label for="radio_other">Autre:</label>
+                            <input type="text"
+                                   name="radio_1"
+                                   id="text_other"
+                            >
+                        </div>
                     </div>
-                    <div>
-                        <input type="radio" name="radio_1" id="radio_jobseeker">
-                        <label for="radio_jobseeker">Demandeur d'emploi</label>
-                    </div>
-                    <div>
-                        <input type="radio" name="radio_1" id="radio_individual">
-                        <label for="radio_individual">Particulier</label>
-                    </div>
-                    <div>
-                        <input type="radio" name="radio_1" id="radio_other">
-                        <label for="radio_other">Autre:</label>
-                        <input type="text" name="radio_1" id="text_other">
-                    </div>
-                </div>
-            </article>
-        </section>
-        <button class="btn-send">Envoie</button>
+                </article>
+                <button class="btn-send">Envoie</button>
+            </section>
     </form>
 </body>
 <footer>
@@ -466,25 +692,29 @@
         <a href="" class="footersocial">Mentions légales</a> - <a href="" class="footersocial">Contact</a> </br>
         Copyright 2019 ITESCIA </div>
 
-    <div class="footersocial">
-        <a href="https://www.facebook.com/itescia/" class="icon"> <img src="assets/image/facebook-logo.png" />
+<div class="footersocial">
+    <a href="https://www.facebook.com/itescia/" class="icon"> <img src="assets/image/facebook-logo.png"  />
         </a>
-        <a href="https://twitter.com/itescia" class="icon"> <img src="assets/image/twitter.png" />
+    <a href="https://twitter.com/itescia" class="icon"> <img src="assets/image/twitter.png" />
         </a>
-        <a href="https://fr.linkedin.com/company/itescia" class="icon"> <img src="assets/image/linkedin.png" />
+    <a href="https://fr.linkedin.com/company/itescia" class="icon"> <img src="assets/image/linkedin.png" />
         </a>
-        <a href="https://www.instagram.com/itescia_officiel/" class="icon"> <img src="assets/image/instagram.png" />
+    <a href="https://www.instagram.com/itescia_officiel/" class="icon"> <img src="assets/image/instagram.png" />
         </a>
-        <a href="https://www.youtube.com/channel/UCAhB6gZz4lFwtbXqhzkyVDg" class="icon"> <img src="assets/image/youtube.png" />
+    <a href="https://www.youtube.com/channel/UCAhB6gZz4lFwtbXqhzkyVDg" class="icon"> <img src="assets/image/youtube.png" />
         </a>
 
 
-    </div>
+</div>
     <div>
-        <p class="footertext">ITESCIA, établissement de la CCI Paris-Ile-de-France collecte ces données afin de répondre à votre demande et au-delà vous tenir informé des activités de nos services. Vos données sont conservées tant que vous ne vous désinscrivez pas. Vos données
-            ne sont pas communiquées à des tiers, hormis au parrain que vous avez mentionné ci-dessus (point 3). Conformément à la loi du 6 janvier 1978, vous disposez d'un droit d'accès aux données qui vous concernent auprès du Correspondant à la protection
-            de données cpdp@cci-paris-idf.fr. Vous disposez également d'un droit de modification ou de suppression des mêmes données auprès de clil@itescia.fr et en cas de problème auprès de cpdp@cci-paris-idf.fr </p>
+        <p class="footertext">ITESCIA,  établissement de la CCI Paris-Ile-de-France collecte ces  données afin de répondre à
+            votre demande et au-delà vous tenir informé des activités de nos services. Vos données sont
+            conservées tant que vous ne vous désinscrivez pas. Vos données ne sont pas communiquées à des
+            tiers, hormis au parrain que vous avez mentionné ci-dessus (point 3). Conformément à la loi du
+            6 janvier 1978, vous disposez d'un droit d'accès aux données qui vous concernent auprès du
+            Correspondant à la protection de données cpdp@cci-paris-idf.fr. Vous disposez également d'un
+            droit de modification ou de suppression des mêmes données auprès de clil@itescia.fr et en cas
+            de problème auprès de cpdp@cci-paris-idf.fr </p>
     </div>
 </footer>
-
 </html>
