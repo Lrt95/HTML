@@ -1,6 +1,6 @@
 header li {
     display: flex;
-flex-direction();
+    flex-direction();
     list-style-type: none;
     padding: 20px;
 }
@@ -9,6 +9,13 @@ flex-direction();
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+
+.flex-bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .flex-col {
@@ -23,7 +30,19 @@ input[type="text"] {
     padding: 2px;
 }
 
-input[type="number"] {
+input[type="tel"] {
+    border-radius: 5px;
+    border-style: groove;
+    padding: 2px;
+}
+
+input[type="email"] {
+    border-radius: 5px;
+    border-style: groove;
+    padding: 2px;
+}
+
+input[type="date"] {
     border-radius: 5px;
     border-style: groove;
     padding: 2px;
@@ -73,8 +92,10 @@ body section {
     border: thick double black;
     border-radius: 10px;
     box-shadow: 5px 5px 5px black, -0.2em 0.2em 1em black;
+}
 
-
+body section:last-child {
+    position: relative;
 }
 
 body form {
@@ -101,9 +122,6 @@ footer {
     height: 180px;
 }
 
-.btn-send {
-    width: 10%;
-}
 
 .title {
     color: darkred;
@@ -236,27 +254,34 @@ input {
     margin-left: 83%;
 }
 
-button {
-    -webkit-appearance: button;
-    -webkit-writing-mode: horizontal-tb !important;
-    text-rendering: auto;
-    color: black;
-    letter-spacing: normal;
-    word-spacing: normal;
-    text-transform: none;
-    text-indent: 0px;
-    text-shadow: none;
-    display: inline-block;
-    text-align: center;
-    align-items: flex-start;
-    cursor: default;
-    background-color: #970002;
-    box-sizing: border-box;
-    margin: 0em;
-    font: 400 11px system-ui;
-    padding: 1px 7px 2px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: rgb(216, 216, 216) rgb(209, 209, 209) rgb(186, 186, 186);
-    border-image: initial;
+ .btn-send {
+     box-shadow:inset 0px 1px 0px 0px #cf866c;
+     background:linear-gradient(to bottom, #d0451b 5%, #DC143C 100%);
+     background-color:#d0451b;
+     border-radius:3px;
+     border:1px solid #942911;
+     display:inline-block;
+     cursor:pointer;
+     color:#ffffff;
+     font-family:Arial;
+     font-size:13px;
+     padding:6px 40px;
+     text-decoration:none;
+     text-shadow:0px 1px 0px #854629;
+ }
+
+.btn-send:hover {
+    background:linear-gradient(to bottom, #bc3315 5%, #d0451b 100%);
+    background-color:#bc3315;
+}
+
+.btn-send:active {
+    position:relative;
+    top:1px;
+}
+
+.btn-center {
+    position: absolute;
+    width: 100%;
+    bottom: 100px;
 }
