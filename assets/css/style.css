@@ -42,18 +42,18 @@ header a {
      font-family:arial, sans-serif;
     text-shadow: 2px 2px 5px black ;
     position: relative; bottom: 30px;
-    margin:0;
-
-
+    margin-top:100px;
 }
+
 
 header{
     margin: 0;
+
 }
 
 header ul{
     background: #1ca8e0;
-    height: 10px;
+    height: auto;
     display: flex;
     flex-direction();
     list-style-type: none;
@@ -70,7 +70,7 @@ body section {
     margin: 10px;
     padding: 10px;
     width: 50%;
-    border: thick double black;
+   
     border-radius: 10px;
     box-shadow: 5px 5px 5px black, -0.2em 0.2em 1em black;
 
@@ -151,7 +151,7 @@ footer {
 }
 
 .footertext {
-    font-size: 10px;
+    font-size: 30%;
     color: white;
     margin-left: 10px;
     margin-top: 40px;
@@ -251,8 +251,8 @@ input {
 
 .powered{
     height: auto;
-    width: 12%;
-    margin-left: 83%;
+    width: 23%;
+    margin-left: auto;
 }
 
 button {
