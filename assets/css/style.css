@@ -16,6 +16,25 @@ flex-direction();
     flex-direction: column;
     justify-content: left;
 }
+
+input[type="text"] {
+    border-radius: 5px;
+    border-style: groove;
+    padding: 2px;
+}
+
+input[type="number"] {
+    border-radius: 5px;
+    border-style: groove;
+    padding: 2px;
+}
+
+textarea {
+    border-radius: 5px;
+    border-style: groove;
+    padding: 2px;
+}
+
 header a {
     color: darkred;
     text-decoration: none;
@@ -29,21 +48,22 @@ header{
 header ul{
     background: #1ca8e0;
     display: flex;
-flex-direction();
+    flex-direction();
     list-style-type: none;
     padding: 20px;
     justify-content: center ;
 }
+
 body {
     margin: 0;
-
+    font-family: 'Roboto', sans-serif;
 }
+
 body section {
     margin: 10px;
     border: solid 3px black;
     padding: 10px;
     width: 50%;
-
 }
 
 body form {
@@ -68,7 +88,6 @@ body span {
 footer {
     background-color: #91283b;
     height: 120px;
-
 }
 
 .btn-send {
@@ -102,19 +121,15 @@ footer {
     margin-bottom: 10px;
 }
 
-
 .scolarity-text {
     resize: none;
     width: 60%;
 }
 
-
 .footersocial {
-
-    text-align:center;
+    text-align: center;
     color: white;
     text-decoration: none;
-
 }
 
 .footertext {
@@ -126,7 +141,8 @@ footer {
 
 .icon {
     text-decoration: none;
-    position: relative; top: 5px
+    position: relative;
+    top: 5px
 }
 
 .list {
