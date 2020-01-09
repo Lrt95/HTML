@@ -12,14 +12,9 @@
 <header>
     <figure class="flex-center">
         <div>
-            <img class="displayed1" id= "conteneur" src="assets/image/itescia.png"
+            <img class="displayed1" id= "conteneur" src="assets/image/logo-itescia.png"
                  alt="Logo itescia"
-                 height="100px">
-        </div>
-        <div>
-            <img class="displayed" id= "itesciaB" src="assets/image/itescia_bandeau.png"
-                 alt="bandeau itescia"
-                 height="100px">
+                 height="250px">
         </div>
     </figure>
     <nav>
@@ -31,11 +26,19 @@
 </header>
 
 
+
 <body>
-    <h1 class="title">Demande d'information Itescia</h1>
+
+        <div class="p-title">
+            <h1 class="title">Demande d'information Itescia</h1>
+        </div>
+
     <form>
+
         <section>
-            <h2 class="subtitle">Votre 1er choix de formation à Itescia</h2>
+            <div class="p-subtitle">
+                <h2 class="subtitle">Votre 1er choix de formation à Itescia</h2>
+            </div>
             <aside>
                 <div class="rectangle"></div>
                 <div class="banniere_management">
@@ -333,9 +336,15 @@
                 </div>
             </article>
         </section>
+        <div class="flex-ligne">
+            <div class="border-line"></div>
+        </div>
+
         <section>
                 <article>
-                    <h2 class="subtitle">Vos coordonnées</h2>
+                    <div class="p-subtitle">
+                        <h2 class="subtitle">Vos coordonnées</h2>
+                    </div>
                     <div class="list">
                         <input type="radio"
                                name="gender"
@@ -465,158 +474,197 @@
 
 
                 <article>
-                    <h2 class="subtitle">Votre scolarité</h2>
+                    <div class="p-subtitle">
+                        <h2 class="subtitle">Votre scolarité</h2>
+                    </div>
                     <div class="list">
+                        <div class="formfield-select">
                         <label for="formation">Niveau de formation actuel:</label>
-                        <select class="list" name="formation" id="formation">
-                            <option value="none">Sans diplôme</option>
-                            <option value="bac">Niveau BAC</option>
-                            <option value="bac1">BAC +1</option>
-                            <option value="bac2">BAC +2</option>
-                            <option value="bac3">BAC +3</option>
-                            <option value="bac4">BAC +4</option>
-                            <option value="bac5">BAC +5</option>
-                        </select>
+                            <div class="formfield-select--container">
+                                <select name="formation" id="formation">
+                                    <option value="none">Sans diplôme</option>
+                                    <option value="bac">Niveau BAC</option>
+                                    <option value="bac1">BAC +1</option>
+                                    <option value="bac2">BAC +2</option>
+                                    <option value="bac3">BAC +3</option>
+                                    <option value="bac4">BAC +4</option>
+                                    <option value="bac5">BAC +5</option>
+                                </select>
+                            </div>
+                        </div>
                     </div>
                     <div class="flex-col">
-                        <label for="school">Etablissement actuel (nom et ville):</label>
-                        <textarea class="scolarity-text"
-                                  cols="100"
-                                  rows="5"
-                                  name="school"
-                                  id="school"
-                        ></textarea>
+                        <div class="list">
+                            <div>
+                                <label for="school">Etablissement actuel (nom et ville):</label>
+                            </div>
+                            <textarea class="scolarity-text"
+                                      cols="100"
+                                      rows="5"
+                                      name="school"
+                                      id="school"
+                            ></textarea>
+                        </div>
                     </div>
                     <div class="flex-col">
-                        <label for="degree">Dernier diplôme obtenu:</label>
-                        <textarea class="scolarity-text"
-                                  cols="100"
-                                  rows="5"
-                                  name="degree"
-                                  id="degree"
-                        ></textarea>
+                        <div class="list">
+                            <div>
+                                <label for="degree">Dernier diplôme obtenu:</label>
+                            </div>
+                            <textarea class="scolarity-text"
+                                      cols="100"
+                                      rows="5"
+                                      name="degree"
+                                      id="degree"
+                            ></textarea>
+                        </div>
                     </div>
                 </article>
 
 
             <article>
-                <h2 class="subtitle">Vos autres souhaits de formation à ITESCIA</h2>
-                <div class="list">
-                    <label for="choice_2">N°2:</label>
-                    <select name="choice" id="choice_2">
-                                <option value="bts_cg">BTS CG</option>
-                                <option value="dcg_l1">DCG entrée en L1</option>
-                                <option value="dcg_l2">DCG entrée en L2</option>
-                                <option value="bac4_l3">Contrôleur de gestion entrée en L3</option>
-                                <option value="bac_m1">Contrôleur de gestion entrée en M1</option>
-                                <option value="bac5">DSCG entrée M1</option>
-                                <option value="rsmqhse_l3">Responsable de systeme de management QHSE entrée en L3</option>
-                                <option value="rsmqhse_m1">Responsable de systeme de management QHSE entrée en M1</option>
-                                <option value="rrh_l3">Responsable Ressources Humaines entrée en L3</option>
-                                <option value="rrh_m1">Responsable Ressources Humaines entrée en M1</option>
-                                <option value="mqpi">Contrôleur de gestion entrée M1</option>
-                                <option value="bac5">Manager Qualité et Processus Intelligents entrée en M2</option>
-                                <option value="bts_sio"> BTS SIO option SISR ou SLAM</option>
-                                <option value="codeur_cergy">Codeur informatique en temps plein (payant) à Cergy</option>
-                                <option value="codeur_paris">Codeur informatique en temps plein (payant) à Paris</option>
-                                <option value="codeur_cergy_alt">Codeur informatique en alternance à Cergy</option>
-                                <option value="codeur_paris_alt">Codeur informatique en alternance à Paris</option>
-                                <option value="lig">Licence d'Informatique générale</option>
-                                <option value="cdsmc_cergy">Concepteur développeur de solution mobiles et connectées en alternance à Cergy</option>
-                                <option value="cdsmc_paris">Concepteur développeur de solution mobiles et connectées en temps plein (payant) à Paris</option>
-                                <option value="mii_l3">Manager en Ingénierie Informatique entrée en L3</option>
-                                <option value="msc_cyb">Manager en Ingénierie Informatique entrée en M1 spécialisation MSC Cybersécurité</option>
-                                <option value="msc_rs">Manager en Ingénierie Informatique entrée en M1 spécialisation MSC Réseaux & Systèmes</option>
-                                <option value="msc_bigdata">Manager en Ingénierie Informatique entrée en M1 spécialisation MSC Big data & Cloud</option>
-                                <option value="msc_gaming">Manager en Ingénierie Informatique entrée en M1 spécialisation MSC Gaming & Smart Tech</option>
-                                <option value="msc_mana_si">Manager en Ingénierie Informatique entrée en M1 spécialisation MSC Management des SI & Digitalisation</option>
-                                <option value="ing_log_sys">Manager en Ingénierie Informatique entrée en M1 spécialisation Ingénierie Logiciels et Systèmes</option>
-                                <option value="ing_ia">Manager en Ingénierie Informatique entrée en M1 spécialisation Ingénierie Artificielle et Applications</option>
-                                <option value="msc_ent_it">Manager en Ingénierie Informatique entrée en M2 spécialisation MSC Entrepreneuriat & IT</option>
-                                <option value="msc_int_it">Manager en Ingénierie Informatique entrée en M2 spécialisation MSC International Business for IT</option>
-                                <option value="perfo_sys_info">Business Analyste Performance et systèmes d'information</option>
-                                <option value="digi_rh">Business Analyste Digitalisation RH</option>
-                            </select>
-                    <label for="level_2">Niveau d'entrée</label>
-                    <select name="level" id="level_2">
-                                <option value="bac1">L1</option>
-                                <option value="bac2">L2</option>
-                                <option value="bac3">L3</option>
-                                <option value="bac4">M1</option>
-                                <option value="bac5">M2</option>
-                            </select>
+                <div class="p-subtitle">
+                    <h2 class="subtitle">Vos autres souhaits de formation à ITESCIA</h2>
                 </div>
                 <div class="list">
-                    <label for="choice_3">N°3:</label>
-                    <select name="choice" id="choice_3">
-                                <option value="bts_cg">BTS CG</option>
-                                <option value="dcg_l1">DCG entrée en L1</option>
-                                <option value="dcg_l2">DCG entrée en L2</option>
-                                <option value="bac4_l3">Contrôleur de gestion entrée en L3</option>
-                                <option value="bac_m1">Contrôleur de gestion entrée en M1</option>
-                                <option value="bac5">DSCG entrée M1</option>
-                                <option value="rsmqhse_l3">Responsable de systeme de management QHSE entrée en L3</option>
-                                <option value="rsmqhse_m1">Responsable de systeme de management QHSE entrée en M1</option>
-                                <option value="rrh_l3">Responsable Ressources Humaines entrée en L3</option>
-                                <option value="rrh_m1">Responsable Ressources Humaines entrée en M1</option>
-                                <option value="mqpi">Contrôleur de gestion entrée M1</option>
-                                <option value="bac5">Manager Qualité et Processus Intelligents entrée en M2</option>
-                                <option value="bts_sio"> BTS SIO option SISR ou SLAM</option>
-                                <option value="codeur_cergy">Codeur informatique en temps plein (payant) à Cergy</option>
-                                <option value="codeur_paris">Codeur informatique en temps plein (payant) à Paris</option>
-                                <option value="codeur_cergy_alt">Codeur informatique en alternance à Cergy</option>
-                                <option value="codeur_paris_alt">Codeur informatique en alternance à Paris</option>
-                                <option value="lig">Licence d'Informatique générale</option>
-                                <option value="cdsmc_cergy">Concepteur développeur de solution mobiles et connectées en alternance à Cergy</option>
-                                <option value="cdsmc_paris">Concepteur développeur de solution mobiles et connectées en temps plein (payant) à Paris</option>
-                                <option value="mii_l3">Manager en Ingénierie Informatique entrée en L3</option>
-                                <option value="msc_cyb">Manager en Ingénierie Informatique entrée en M1 spécialisation MSC Cybersécurité</option>
-                                <option value="msc_rs">Manager en Ingénierie Informatique entrée en M1 spécialisation MSC Réseaux & Systèmes</option>
-                                <option value="msc_bigdata">Manager en Ingénierie Informatique entrée en M1 spécialisation MSC Big data & Cloud</option>
-                                <option value="msc_gaming">Manager en Ingénierie Informatique entrée en M1 spécialisation MSC Gaming & Smart Tech</option>
-                                <option value="msc_mana_si">Manager en Ingénierie Informatique entrée en M1 spécialisation MSC Management des SI & Digitalisation</option>
-                                <option value="ing_log_sys">Manager en Ingénierie Informatique entrée en M1 spécialisation Ingénierie Logiciels et Systèmes</option>
-                                <option value="ing_ia">Manager en Ingénierie Informatique entrée en M1 spécialisation Ingénierie Artificielle et Applications</option>
-                                <option value="msc_ent_it">Manager en Ingénierie Informatique entrée en M2 spécialisation MSC Entrepreneuriat & IT</option>
-                                <option value="msc_int_it">Manager en Ingénierie Informatique entrée en M2 spécialisation MSC International Business for IT</option>
-                                <option value="perfo_sys_info">Business Analyste Performance et systèmes d'information</option>
-                                <option value="digi_rh">Business Analyste Digitalisation RH</option>
-                            </select>
-                    <label for="level_3">Niveau d'entrée</label>
-                    <select name="level" id="level_3">
-                                <option value="bac1">L1</option>
-                                <option value="bac2">L2</option>
-                                <option value="bac3">L3</option>
-                                <option value="bac4">M1</option>
-                                <option value="bac5">M2</option>
-                            </select>
+                    <div class="formfield-select">
+                        <label for="choice_2">N°2:</label>
+                        <div class="formfield-select--container">
+                            <select name="choice" id="choice_2">
+                                        <option value="bts_cg">BTS CG</option>
+                                        <option value="dcg_l1">DCG entrée en L1</option>
+                                        <option value="dcg_l2">DCG entrée en L2</option>
+                                        <option value="bac4_l3">Contrôleur de gestion entrée en L3</option>
+                                        <option value="bac_m1">Contrôleur de gestion entrée en M1</option>
+                                        <option value="bac5">DSCG entrée M1</option>
+                                        <option value="rsmqhse_l3">Responsable de systeme de management QHSE entrée en L3</option>
+                                        <option value="rsmqhse_m1">Responsable de systeme de management QHSE entrée en M1</option>
+                                        <option value="rrh_l3">Responsable Ressources Humaines entrée en L3</option>
+                                        <option value="rrh_m1">Responsable Ressources Humaines entrée en M1</option>
+                                        <option value="mqpi">Contrôleur de gestion entrée M1</option>
+                                        <option value="bac5">Manager Qualité et Processus Intelligents entrée en M2</option>
+                                        <option value="bts_sio"> BTS SIO option SISR ou SLAM</option>
+                                        <option value="codeur_cergy">Codeur informatique en temps plein (payant) à Cergy</option>
+                                        <option value="codeur_paris">Codeur informatique en temps plein (payant) à Paris</option>
+                                        <option value="codeur_cergy_alt">Codeur informatique en alternance à Cergy</option>
+                                        <option value="codeur_paris_alt">Codeur informatique en alternance à Paris</option>
+                                        <option value="lig">Licence d'Informatique générale</option>
+                                        <option value="cdsmc_cergy">Concepteur développeur de solution mobiles et connectées en alternance à Cergy</option>
+                                        <option value="cdsmc_paris">Concepteur développeur de solution mobiles et connectées en temps plein (payant) à Paris</option>
+                                        <option value="mii_l3">Manager en Ingénierie Informatique entrée en L3</option>
+                                        <option value="msc_cyb">Manager en Ingénierie Informatique entrée en M1 spécialisation MSC Cybersécurité</option>
+                                        <option value="msc_rs">Manager en Ingénierie Informatique entrée en M1 spécialisation MSC Réseaux & Systèmes</option>
+                                        <option value="msc_bigdata">Manager en Ingénierie Informatique entrée en M1 spécialisation MSC Big data & Cloud</option>
+                                        <option value="msc_gaming">Manager en Ingénierie Informatique entrée en M1 spécialisation MSC Gaming & Smart Tech</option>
+                                        <option value="msc_mana_si">Manager en Ingénierie Informatique entrée en M1 spécialisation MSC Management des SI & Digitalisation</option>
+                                        <option value="ing_log_sys">Manager en Ingénierie Informatique entrée en M1 spécialisation Ingénierie Logiciels et Systèmes</option>
+                                        <option value="ing_ia">Manager en Ingénierie Informatique entrée en M1 spécialisation Ingénierie Artificielle et Applications</option>
+                                        <option value="msc_ent_it">Manager en Ingénierie Informatique entrée en M2 spécialisation MSC Entrepreneuriat & IT</option>
+                                        <option value="msc_int_it">Manager en Ingénierie Informatique entrée en M2 spécialisation MSC International Business for IT</option>
+                                        <option value="perfo_sys_info">Business Analyste Performance et systèmes d'information</option>
+                                        <option value="digi_rh">Business Analyste Digitalisation RH</option>
+                                    </select>
+                        </div>
+                    </div>
+                    <div class="formfield-select">
+                        <label for="level_2">Niveau d'entrée</label>
+                        <div class="formfield-select--container">
+                            <select name="level" id="level_2">
+                                        <option value="bac1">L1</option>
+                                        <option value="bac2">L2</option>
+                                        <option value="bac3">L3</option>
+                                        <option value="bac4">M1</option>
+                                        <option value="bac5">M2</option>
+                                    </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="formfield-select">
+                        <label for="choice_3">N°3:</label>
+                        <div class="formfield-select--container">
+                            <select name="choice" id="choice_3">
+                                        <option value="bts_cg">BTS CG</option>
+                                        <option value="dcg_l1">DCG entrée en L1</option>
+                                        <option value="dcg_l2">DCG entrée en L2</option>
+                                        <option value="bac4_l3">Contrôleur de gestion entrée en L3</option>
+                                        <option value="bac_m1">Contrôleur de gestion entrée en M1</option>
+                                        <option value="bac5">DSCG entrée M1</option>
+                                        <option value="rsmqhse_l3">Responsable de systeme de management QHSE entrée en L3</option>
+                                        <option value="rsmqhse_m1">Responsable de systeme de management QHSE entrée en M1</option>
+                                        <option value="rrh_l3">Responsable Ressources Humaines entrée en L3</option>
+                                        <option value="rrh_m1">Responsable Ressources Humaines entrée en M1</option>
+                                        <option value="mqpi">Contrôleur de gestion entrée M1</option>
+                                        <option value="bac5">Manager Qualité et Processus Intelligents entrée en M2</option>
+                                        <option value="bts_sio"> BTS SIO option SISR ou SLAM</option>
+                                        <option value="codeur_cergy">Codeur informatique en temps plein (payant) à Cergy</option>
+                                        <option value="codeur_paris">Codeur informatique en temps plein (payant) à Paris</option>
+                                        <option value="codeur_cergy_alt">Codeur informatique en alternance à Cergy</option>
+                                        <option value="codeur_paris_alt">Codeur informatique en alternance à Paris</option>
+                                        <option value="lig">Licence d'Informatique générale</option>
+                                        <option value="cdsmc_cergy">Concepteur développeur de solution mobiles et connectées en alternance à Cergy</option>
+                                        <option value="cdsmc_paris">Concepteur développeur de solution mobiles et connectées en temps plein (payant) à Paris</option>
+                                        <option value="mii_l3">Manager en Ingénierie Informatique entrée en L3</option>
+                                        <option value="msc_cyb">Manager en Ingénierie Informatique entrée en M1 spécialisation MSC Cybersécurité</option>
+                                        <option value="msc_rs">Manager en Ingénierie Informatique entrée en M1 spécialisation MSC Réseaux & Systèmes</option>
+                                        <option value="msc_bigdata">Manager en Ingénierie Informatique entrée en M1 spécialisation MSC Big data & Cloud</option>
+                                        <option value="msc_gaming">Manager en Ingénierie Informatique entrée en M1 spécialisation MSC Gaming & Smart Tech</option>
+                                        <option value="msc_mana_si">Manager en Ingénierie Informatique entrée en M1 spécialisation MSC Management des SI & Digitalisation</option>
+                                        <option value="ing_log_sys">Manager en Ingénierie Informatique entrée en M1 spécialisation Ingénierie Logiciels et Systèmes</option>
+                                        <option value="ing_ia">Manager en Ingénierie Informatique entrée en M1 spécialisation Ingénierie Artificielle et Applications</option>
+                                        <option value="msc_ent_it">Manager en Ingénierie Informatique entrée en M2 spécialisation MSC Entrepreneuriat & IT</option>
+                                        <option value="msc_int_it">Manager en Ingénierie Informatique entrée en M2 spécialisation MSC International Business for IT</option>
+                                        <option value="perfo_sys_info">Business Analyste Performance et systèmes d'information</option>
+                                        <option value="digi_rh">Business Analyste Digitalisation RH</option>
+                                    </select>
+                        </div>
+                    </div>
+                    <div class="formfield-select">
+                        <label for="level_3">Niveau d'entrée</label>
+                        <div class="formfield-select--container">
+                            <select name="level" id="level_3">
+                                        <option value="bac1">L1</option>
+                                        <option value="bac2">L2</option>
+                                        <option value="bac3">L3</option>
+                                        <option value="bac4">M1</option>
+                                        <option value="bac5">M2</option>
+                                    </select>
+                        </div>
+                    </div>
                 </div>
             </article>
 
                 <article>
-                    <h2 class="subtitle">Votre parrain à ITESCIA</h2>
+                    <div class="p-subtitle">
+                        <h2 class="subtitle">Votre parrain à ITESCIA</h2>
+                    </div>
                     <div class="list">
-                        <label for="last_name_1">Nom:</label>
-                        <input type="text"
-                               name="last_name"
-                               id="last_name_1"
-                        >
-                        <label for="first_name_1">Prenom:</label>
-                        <input type="text"
-                               name="first_name"
-                               id="first_name_1"
-                        >
+                        <div class="flex-responsive">
+                            <label for="last_name_1">Nom:</label>
+                            <input type="text"
+                                   name="last_name"
+                                   id="last_name_1">
+                            <label for="first_name_1">Prenom:</label>
+                            <input type="text"
+                                   name="first_name"
+                                   id="first_name_1"
+                            >
+                        </div>
                     </div>
                     <div class="flex-col">
-                        <label for="formation_in_progress">Formation suivie:</label>
-                        <textarea class="scolarity-text"
-                                  cols="100"
-                                  rows="5"
-                                  name="formation_in_progress"
-                                  id="formation_in_progress"
-                        ></textarea>
+                        <div class="list">
+                            <div>
+                                <label for="formation_in_progress">Formation suivie:</label>
+                            </div>
+                            <textarea class="scolarity-text"
+                                      cols="100"
+                                      rows="5"
+                                      name="formation_in_progress"
+                                      id="formation_in_progress"
+                            ></textarea>
+                        </div>
                     </div>
-                    <h3>FORMATION CONTINUE:</h3>
+                    <h3 class="subtitle">FORMATION CONTINUE:</h3>
                     <table class="list">
                         <tr>
                             <td>
@@ -719,14 +767,16 @@
                             </td>
                         </tr>
                     </table>
-                    <h4>Votre situation:</h4>
+                    <h4 class="subtitle">Votre situation:</h4>
                     <div class="list">
-                        <div>
-                            <input type="radio"
-                                   name="radio_1"
-                                   id="radio_employe"
-                            >
-                            <label for="radio_employe">Salarié(e),de l'entreprise</label>
+                        <div class="flex-responsive">
+                            <div>
+                                <input type="radio"
+                                       name="radio_1"
+                                       id="radio_employe"
+                                >
+                                <label for="radio_employe">Salarié(e),de l'entreprise</label>
+                            </div>
                             <input type="text"
                                    name="radio_1"
                                    id="text_employe_1"
@@ -746,12 +796,14 @@
                             >
                             <label for="radio_individual">Particulier</label>
                         </div>
-                        <div>
-                            <input type="radio"
-                                   name="radio_1"
-                                   id="radio_other"
-                            >
-                            <label for="radio_other">Autre:</label>
+                        <div class="flex-responsive">
+                            <div>
+                                <input type="radio"
+                                       name="radio_1"
+                                       id="radio_other"
+                                >
+                                <label for="radio_other">Autre:</label>
+                            </div>
                             <input type="text"
                                    name="radio_1"
                                    id="text_other"
