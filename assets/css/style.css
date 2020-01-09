@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:900i');
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
 
 
 header li {
@@ -43,9 +44,9 @@ header nav{
 }
 
 textarea {
-    border-radius: 5px;
-    border-style: groove;
-    padding: 2px;
+    background-color: #f7f7f7;
+    border: #777 1px solid;
+    overflow: hidden;
 }
 
 header a:hover{
@@ -145,46 +146,22 @@ footer {
     height: auto;
 }
 
-input:hover[type="text"] {
-    border-radius: 5px;
-    border-style: groove;
-    padding: 2px;
-}
-
-input:hover[type="tel"] {
-    border-radius: 5px;
-    border-style: groove;
-    padding: 2px;
-}
-
-input:hover[type="email"] {
-    border-radius: 5px;
-    border-style: groove;
-    padding: 2px;
-}
-
-input:hover[type="date"] {
-    border-radius: 5px;
-    border-style: groove;
-    padding: 2px;
-}
-
-
 
 .title {
     color: #91283b;
-
-    margin-top: 0px;
+    font: 600 2em/1.5 "Oswald"; color: #91283b;
+    text-align: center;
+    margin-top: 30px;
     padding-top: 20px;
     padding-bottom: 20px;
-    : ;
 
 }
 
 .subtitle {
     color: #91283b;
     justify-content: center;
-
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .gestion {
@@ -248,12 +225,9 @@ input {
     border-bottom: 70px solid #91283b;
     border-left  : 0px solid transparent;
     border-right : 110px solid transparent;
-
     height : 0;
     width  : 54%;
-
     margin-left: 20px;
-
     position: relative;
     z-index: 2;
 }
@@ -301,6 +275,7 @@ input {
     height: 95%;
     border-right: 2px solid #91283b;
     margin-right: 20px;
+    margin-left: 20px;
 }
 
 
@@ -338,7 +313,7 @@ input {
 }
 
 .btn-center {
-    position: absolute;
+    position: relative;
     width: 100%;
     margin-top: 10%;
 }
@@ -350,13 +325,10 @@ input {
     justify-content: center;
 }
 
-.p-title{
-    font: 700 4em/1 "Oswald", sans-serif;
-    padding: .25em 0 .325em;
-    display: block;
-    margin: 2px;
-    text-shadow: 0 0 80px #91283B;
 
+.p-title{
+    display: flex;
+    justify-content: center;
 }
 
 .p-subtitle {
@@ -364,7 +336,6 @@ input {
     padding: .25em 0 .325em;
     display: block;
     margin: 2px;
-
 }
 h1{
     text-transform: uppercase;
@@ -374,14 +345,84 @@ h1{
     padding: 1.5em 0em;
     position: relative;
     top: 10px;
-    left: 50%;
-    width: 40em;
-    margin: 0 0 0 -20em;
+    width: 20em;
 }
 
 h2 {
     border: 4px double #91283B;
     border-width: 4px 0;
+}
+
+.formfield-select {
+    position: relative;
+}
+
+.formfield-select--container {
+    position: relative;
+
+    background-color: #fff;
+    border: #777 1px solid;
+    margin: 0 0 1.5em 0;
+
+    overflow: hidden;
+}
+
+.formfield-select--container select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    width: 110%;
+
+    height: auto;
+    border: 0;
+    margin: 0;
+    padding: .75em;
+    border-radius: 0;
+
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.formfield-select--container::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    margin-top: -3px;
+    right: .75em;
+    display: block;
+    width: 0; height: 0;
+    border-color: transparent;
+    border-top-color: #444;
+    border-width: 6px;
+    border-style: solid;
+    pointer-events: none;
+}
+
+input[type="date"] {
+    background-color: #f7f7f7;
+    border: #777 1px solid;
+    overflow: hidden;
+}
+
+input[type="text"] {
+
+    background-color: #f7f7f7;
+    border: #777 1px solid;
+    overflow: hidden;
+}
+
+input[type="tel"] {
+    background-color: #f7f7f7;
+    border: #777777 1px solid;
+    overflow: hidden;
+}
+
+input[type="email"] {
+    background-color: #f7f7f7;
+    border: #777 1px solid;
+    overflow: hidden;
 }
 
 @media screen and (max-width: 950px) {
@@ -425,18 +466,34 @@ h2 {
 
     input[type="date"] {
         width: 74%;
+        background-color: #f7f7f7;
+        border: #777 1px solid;
+        margin: 0 0 1.5em 0;
+        overflow: hidden;
     }
 
     input[type="text"] {
         width: 75%;
+        background-color: #f7f7f7;
+        border: #777 1px solid;
+        margin: 0 0 1.5em 0;
+        overflow: hidden;
     }
 
     input[type="tel"] {
         width: 75%;
+        background-color: #f7f7f7;
+        border: #777 1px solid;
+        margin: 0 0 1.5em 0;
+        overflow: hidden;
     }
 
     input[type="email"] {
         width: 75%;
+        background-color: #f7f7f7;
+        border: #777 1px solid;
+        margin: 0 0 1.5em 0;
+        overflow: hidden;
     }
 
     .border-line{
@@ -445,11 +502,6 @@ h2 {
         margin-right:  100px;
     }
 
-    .btn-center {
-        position: absolute;
-        width: 100%;
-
-    }
 
     #conteneur{
         height: 150px;
