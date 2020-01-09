@@ -12,14 +12,9 @@
 <header>
     <figure class="flex-center">
         <div>
-            <img class="displayed1" id= "conteneur" src="assets/image/itescia.png"
+            <img class="displayed1" id= "conteneur" src="assets/image/logo-itescia.png"
                  alt="Logo itescia"
-                 height="100px">
-        </div>
-        <div>
-            <img class="displayed" id= "itesciaB" src="assets/image/itescia_bandeau.png"
-                 alt="bandeau itescia"
-                 height="100px">
+                 height="250px">
         </div>
     </figure>
     <nav>
@@ -31,8 +26,14 @@
 </header>
 
 
+
 <body>
-    <h1 class="title">Demande d'information Itescia</h1>
+
+    <div class="flex-col">
+        <p class="p-title">
+        <h1 class="title">Demande d'information Itescia</h1>
+        </p>
+    </div>
     <form>
         <section>
             <h2 class="subtitle">Votre 1er choix de formation à Itescia</h2>
@@ -330,8 +331,10 @@
                 </div>
             </article>
         </section>
-        <section>
+        <div class="flex-ligne">
             <div class="border-line"></div>
+        </div>
+        <section>
 
 
                 <article>
@@ -465,7 +468,9 @@
 
 
                 <article>
-                    <h2 class="subtitle">Votre scolarité</h2>
+                    <div class="p-subtitle">
+                        <h2 class="subtitle">Votre scolarité</h2>
+                    </div>
                     <div class="list">
                         <label for="formation">Niveau de formation actuel:</label>
                         <select name="formation" id="formation">
@@ -630,7 +635,7 @@
                             ></textarea>
                         </div>
                     </div>
-                    <h3>FORMATION CONTINUE:</h3>
+                    <h3 class="subtitle">FORMATION CONTINUE:</h3>
                     <table class="list">
                         <tr>
                             <td>
@@ -730,14 +735,16 @@
                             </td>
                         </tr>
                     </table>
-                    <h4>Votre situation:</h4>
+                    <h4 class="subtitle">Votre situation:</h4>
                     <div class="list">
-                        <div>
-                            <input type="radio"
-                                   name="radio_1"
-                                   id="radio_employe"
-                            >
-                            <label for="radio_employe">Salarié(e),de l'entreprise</label>
+                        <div class="flex-responsive">
+                            <div>
+                                <input type="radio"
+                                       name="radio_1"
+                                       id="radio_employe"
+                                >
+                                <label for="radio_employe">Salarié(e),de l'entreprise</label>
+                            </div>
                             <input type="text"
                                    name="radio_1"
                                    id="text_employe_1"
@@ -757,12 +764,14 @@
                             >
                             <label for="radio_individual">Particulier</label>
                         </div>
-                        <div>
-                            <input type="radio"
-                                   name="radio_1"
-                                   id="radio_other"
-                            >
-                            <label for="radio_other">Autre:</label>
+                        <div class="flex-responsive">
+                            <div>
+                                <input type="radio"
+                                       name="radio_1"
+                                       id="radio_other"
+                                >
+                                <label for="radio_other">Autre:</label>
+                            </div>
                             <input type="text"
                                    name="radio_1"
                                    id="text_other"

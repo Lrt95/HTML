@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:900i');
 
+
 header li {
     display: flex;
-flex-direction();
     list-style-type: none;
     padding: 20px;
 }
@@ -26,6 +26,124 @@ flex-direction();
     justify-content: left;
 }
 
+header{
+    background-image: url("https://free-images.com/lg/25d1/student_typing_keyboard_text.jpg");
+    background-size: cover;
+}
+
+header figure {
+
+    margin: 0px;
+    padding: 50px;
+}
+header nav{
+
+    height: 100%;
+    margin: 0px;
+}
+
+textarea {
+    border-radius: 5px;
+    border-style: groove;
+    padding: 2px;
+}
+
+header a:hover{
+    position: relative;
+    font-size: 35px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    cursor: pointer;
+
+    border-bottom: 5px solid white;
+    border-left  : 50px solid transparent;
+    border-right : 50px solid transparent;
+    height : 0;
+    width  : 1px;
+    margin-left: 2px;
+    font-size:2.5vw;
+    text-align: center;
+    padding: 15px 15px 30px;
+    display: flex;
+    justify-content: center ;
+    border-radius: 50px;
+
+    }
+
+header a {
+    text-decoration: none;
+    border-bottom: 1px solid white;
+    border-left  : 50px solid transparent;
+    border-right : 50px solid transparent;
+    height : 0;
+    width  : 1px;
+    margin-left: 2px;
+    text-align: center;
+    color: white;
+    padding: 10px 10px 25px;
+    display: flex;
+    justify-content: center ;
+    border-radius: 10px;
+    font-size:2vw;
+    text-shadow: 2px 2px 5px black ;
+}
+
+
+
+header ul{
+    margin: 0px;
+
+    display: flex;
+    list-style-type: none;
+    padding: 20px;
+    justify-content: center ;
+    }
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+body section {
+    margin: 10px;
+    padding: 10px;
+    width: 50%;
+}
+
+body section:last-child {
+    position: relative;
+}
+
+body form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+body legend {
+    color: #91283b;
+    margin-bottom: 10px;
+}
+
+body label {
+    font-size: 13px;
+}
+
+body span {
+    font-size: 15px;
+}
+
+body select {
+    width: 100%;
+}
+
+footer {
+    background-color: #91283b;
+    height: auto;
+}
 
 input:hover[type="text"] {
     border-radius: 5px;
@@ -51,118 +169,21 @@ input:hover[type="date"] {
     padding: 2px;
 }
 
-textarea {
-    border-radius: 5px;
-    border-style: groove;
-    padding: 2px;
-}
-
-header a:hover{
-    position: relative;
-    font-size: 35px;
-    text-align: center;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    text-decoration: none;
-    cursor: pointer;
-
-    border-bottom: 1px solid #1b92c8;
-    border-left  : 50px solid transparent;
-    border-right : 50px solid transparent;
-    height : 0;
-    width  : 1px;
-    margin-left: 2px;
-
-    text-align: center;
-    background-image:linear-gradient(#1d86c8, #1d96d8) ;
-    padding: 15px 15px 30px;
-    display: flex;
-    justify-content: center ;
-    border-radius: 50px;
-    box-shadow: 1px 1px 1px #279ac4, -0.1em 0.1em 1em #09364b;
-
-}  header a {
-       text-decoration: none;
-    border-bottom: 1px solid #1d96d8;
-    border-left  : 50px solid transparent;
-    border-right : 50px solid transparent;
-    height : 0;
-    width  : 1px;
-    margin-left: 2px;
-
-    text-align: center;
-    color: black;
-    background-image:linear-gradient(#1d96d8, #1da9ea) ;
-    padding: 10px 10px 25px;
-    display: flex;
-    justify-content: center ;
-    border-radius: 10px;
-}
-
-
-
-
-
-header ul{
-    background: #1ca8e0;
-    height: 50px;
-    display: flex;
-    list-style-type: none;
-    padding: 20px;
-    justify-content: center ;
-}
-
-body {
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-}
-
-body section {
-    margin: 10px;
-    padding: 10px;
-    width: 50%;
-}
-
-body section:last-child {
-    position: relative;
-}
-
-body form {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-body legend {
-    color: darkred;
-    margin-bottom: 10px;
-}
-
-body label {
-    font-size: 13px;
-}
-
-body span {
-    font-size: 15px;
-}
-
-body select {
-    width: 100%;
-}
-
-footer {
-    background-color: #91283b;
-    height: auto;
-}
 
 
 .title {
-    color: darkred;
-    text-align: center;
+    color: #91283b;
+
+    margin-top: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    : ;
+
 }
 
 .subtitle {
-    color: darkred;
+    color: #91283b;
+    justify-content: center;
 
 }
 
@@ -224,7 +245,7 @@ input {
 }
 
 .banniere_management, .banniere_management1 {
-    border-bottom: 70px solid #DC143C;
+    border-bottom: 70px solid #91283b;
     border-left  : 0px solid transparent;
     border-right : 110px solid transparent;
 
@@ -240,7 +261,7 @@ input {
 .rectangle{
     width: 12px;
     height: 70px;
-    background-color: #DC143C;
+    background-color: #91283b;
     position:absolute;
 
     
@@ -258,7 +279,7 @@ input {
     opacity:0.6;
     width: 12px;
     height: 70px;
-    background-color: #DC143C;
+    background-color: #91283b;
     margin-left: -5px;
     position: absolute; top: 5px;
 
@@ -276,60 +297,13 @@ input {
     width: 10%;
 }
 
-
-@media screen and (max-width: 950px) {
-    .banniere_management{
-        border-bottom: 20px solid #DC143C;
-        width:22%;
-    }
-    .banniere_management1{
-        border-bottom: 22px solid #DC143C;
-        width: 110%;
-        top: 2px;
-
-    }
-    .rectangle {
-      
-        height: 20px;
- }.rectangle1 {
-        height: 19px;
- }
-    .text-banniere{
-        font-size: 1vw;
-        top:-3px;
-    }
-
-    .flex-responsive {
-        display: flex;
-        flex-direction: column;
-        justify-content: left;
-    }
-
-    body form {
-        flex-wrap: wrap;
-    }
-
-    body td {
-        display: block;
-    }
-
-    input[type="date"] {
-        width: 74%;
-    }
-
-    input[type="text"] {
-        width: 75%;
-    }
-
-    input[type="tel"] {
-        width: 75%;
-    }
-
-    input[type="email"] {
-        width: 75%;
-    }
-
+.border-line {
+    height: 95%;
+    border-right: 2px solid #91283b;
+    margin-right: 20px;
 }
+
+
 
 .powered{
     height: auto;
@@ -339,7 +313,7 @@ input {
 
  .btn-send {
      box-shadow:inset 0px 1px 0px 0px #cf866c;
-     background:linear-gradient(to bottom, #d0451b 5%, #DC143C 100%);
+     background:linear-gradient(to bottom, #b4283b 5%, #91283b 100%);
      background-color:#d0451b;
      border-radius:3px;
      border:1px solid #942911;
@@ -366,12 +340,125 @@ input {
 .btn-center {
     position: absolute;
     width: 100%;
-    bottom: 100px;
+    margin-top: 10%;
 }
 
-.border-line {
-    height: 100%;
-    border-right: 1px solid blue;
-    position: absolute;
+
+.flex-ligne {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.p-title{
+    font: 700 4em/1 "Oswald", sans-serif;
+    padding: .25em 0 .325em;
+    display: block;
+    margin: 2px;
+    text-shadow: 0 0 80px #91283B;
+
+}
+
+.p-subtitle {
+    font: 400 1em/1 "Oswald", sans-serif;
+    padding: .25em 0 .325em;
+    display: block;
+    margin: 2px;
+
+}
+h1{
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    border: 4px double #91283B;
+    border-width: 4px 0;
+    padding: 1.5em 0em;
+    position: relative;
+    top: 10px;
+    left: 50%;
+    width: 40em;
+    margin: 0 0 0 -20em;
+}
+
+h2 {
+    border: 4px double #91283B;
+    border-width: 4px 0;
+}
+
+@media screen and (max-width: 950px) {
+    .banniere_management{
+        border-bottom: 20px solid #91283b;
+        width:22%;
+    }
+    .banniere_management1{
+        border-bottom: 22px solid #91283b;
+        width: 110%;
+        top: 2px;
+
+    }
+    .rectangle {
+
+        height: 20px;
+    }
+    .rectangle1 {
+        height: 19px;
+    }
+
+    .text-banniere{
+        font-size: 1vw;
+        top:-3px;
+    }
+
+    .flex-responsive {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+    }
+
+
+    body form {
+        flex-wrap: wrap;
+    }
+
+    body td {
+        display: block;
+    }
+
+    input[type="date"] {
+        width: 74%;
+    }
+
+    input[type="text"] {
+        width: 75%;
+    }
+
+    input[type="tel"] {
+        width: 75%;
+    }
+
+    input[type="email"] {
+        width: 75%;
+    }
+
+    .border-line{
+        border-right: 0px;
+        height: 0px;
+        margin-right:  100px;
+    }
+
+    .btn-center {
+        position: absolute;
+        width: 100%;
+
+    }
+
+    #conteneur{
+        height: 150px;
+    }
+
+    .btn-center {
+        position: relative;
+        width: 100%;
+        margin-top: 10%;
+    }
 
 }
