@@ -28,6 +28,7 @@ header li {
 
 header figure {
     background: no-repeat right gray url(https://upload.wikimedia.org/wikipedia/commons/1/11/Maquette_du_nouveau_b%C3%A2timent_ITESCIA.png);
+    background-size: cover;
     margin:0;
 }
 
@@ -387,4 +388,5 @@ input {
     width: 100%;
     bottom: 100px;
 }
+
 
