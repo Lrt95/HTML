@@ -432,6 +432,30 @@ input[type="email"] {
     overflow: hidden;
 }
 
+input[type="radio"]{
+    -webkit-appearance: none;
+    position: relative;
+    top: 4px
+}
+input[type="radio"]
+{
+    background: white;
+    height: 12px;
+    width: 12px;
+    display:inline-block;
+    padding: 0 0 0 0px;
+    border-radius: 12px;
+    border: solid 2px;
+}
+input[type="radio"]:checked
+{
+    background: black;
+    height: 12px;
+    width: 12px;
+    display:inline-block;
+    padding: 0 0 0 0px;
+}
+
 @media screen and (max-width: 950px) {
     .banniere_management{
         border-bottom: 20px solid #91283b;
